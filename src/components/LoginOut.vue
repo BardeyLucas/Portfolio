@@ -4,7 +4,7 @@ import { loginWithGitHub, loginWithGoogle, logout, user } from '@/backend'
 <template>
   <div>
     <button v-if="user" @click="logout">{{ user.username }} se déconnecter</button>
-    <div v-else>
+    <div v-else class="flex gap-5">
       <button @click="loginWithGitHub">Se connecter avec GitHub</button>
       <button @click="loginWithGoogle">Se connecter avec Google</button>
     </div>

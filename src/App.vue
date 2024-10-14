@@ -6,7 +6,7 @@ import LoginOut from './components/LoginOut.vue';
 <template>
   <nav>
     <RouterLink to="/">Lien  </RouterLink>
-    <RouterLink to="/test">Test moi ça petit gras</RouterLink>
+    <RouterLink to="/test">Test</RouterLink>
   </nav>
   <div  class="bg-slate-100">
   <h1 class="text-indigo-700">Template principale (Menu/Footer...)</h1>

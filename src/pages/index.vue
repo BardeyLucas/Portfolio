@@ -10,7 +10,7 @@ const projet = await pb.collection('')
     <h1>Choix projet</h1>
     <nav>
         <ul>
-            <li><RouterLink to="/test"><Button /></RouterLink></li>
+            <li><RouterLink to="/test"><Button Text="test" /></RouterLink></li>
         </ul>
     </nav>
 </template>

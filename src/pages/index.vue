@@ -2,6 +2,7 @@
 <script setup lang="ts">
 import { pb } from '@/backend';
 import { useRoute, RouterLink } from 'vue-router';
+import Button from '../components/btnProjetDefault.vue'
 const route = useRoute('/Projet/[id]')
 const projet = await pb.collection('')
 </script>
@@ -9,7 +10,7 @@ const projet = await pb.collection('')
     <h1>Choix projet</h1>
     <nav>
         <ul>
-            <li><RouterLink to="/test">Test</RouterLink></li>
+            <li><RouterLink to="/test"><Button /></RouterLink></li>
         </ul>
     </nav>
 </template>

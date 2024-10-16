@@ -23,7 +23,7 @@ console.log('test')
     <div
       class="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2.5 px-3 py-2 bg-[#00092a]"
     >
-      <p class="flex-grow-0 flex-shrink-0 text-xl text-center text-[#ffa800]">{{ props.title }}</p>
+      <p class="flex-grow-0 flex-shrink-0 text-xl text-center text-[#ffa800]">{{ props.titleAlt }}</p>
     </div>
   </div>
 </div>

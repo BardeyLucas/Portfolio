@@ -1,10 +1,10 @@
 import PocketBase from 'pocketbase'
 import { type TypedPocketBase, type UsersResponse } from './pocketbase-types.js'
 import { ref } from 'vue'
+console.log('varbialbe envi', import.meta.env.VITE_URL_POCKETBASE)
 
-export const pb = new PocketBase(import.meta.env.VITE_URL_POCKETBASE) as TypedPocketBase;
-
-pb.collection("equipes").getFullList();
+// export const pb = new PocketBase('http://127.0.0.1:8090') as TypedPocketBase
+export const pb = new PocketBase(import.meta.env.VITE_URL_POCKETBASE) as TypedPocketBase
 
 export function logout() {
   pb.authStore.clear()
@@ -24,5 +24,4 @@ export async function loginWithGoogle() {
 export const user = ref<UsersResponse | null>(null)
 pb.authStore.onChange((token, model) => {
   user.value = model as UsersResponse
-}, true);
-
+}, true)

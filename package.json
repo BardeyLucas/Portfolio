@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "-": "^0.0.1",
+    "@vueuse/core": "^11.1.0",
     "pocketbase": "^0.21.5",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"

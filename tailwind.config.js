@@ -3,35 +3,50 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,vue}'],
   theme: {
     extend: {
-      // A changer
-      "colors": {
-        "Water": "#00176a",
-        "Decoration": "#00092a",
-        "Night sky": "#000f46",
-        "Waves": "#adbfff",
-        "Blue sky": "#0066ff",
-        "Pink sky": "#ff00b8",
-        "Orange sky": "#ffa800",
-        "White": "#f4f7ff"
+      gridTemplateColumns: {
+        'principal': 'repeat(12, 1fr)',
+        'pc12': 'repeat(12, 1fr)',
+        'pc11': 'repeat(11, 1fr)',
+        'pc10': 'repeat(10, 1fr)',
+        'pc9': 'repeat(9, 1fr)',
+        'pc8': 'repeat(8, 1fr)',
+        'pc7': 'repeat(7, 1fr)',
+        'pc6': 'repeat(6, 1fr)',
+        'pc5': 'repeat(5, 1fr)',
+        'pc4': 'repeat(4, 1fr)',
+        'pc3': 'repeat(3, 1fr)',
+        'pc2': 'repeat(2, 1fr)',
+        'pc1': 'repeat(1, 1fr)',
+        'telprincipal':'repeat(12, 20px)',
+        'tel12': 'repeat(12, 20px)',
+        'tel11': 'repeat(11, 20px)',
+        'tel10': 'repeat(10, 20px)',
+        'tel9': 'repeat(9, 20px)',
+        'tel8': 'repeat(8, 20px)',
+        'tel7': 'repeat(7, 20px)',
+        'tel6': 'repeat(6, 20px)',
+        'tel5': 'repeat(5, 20px)',
+        'tel4': 'repeat(4, 20px)',
+        'tel3': 'repeat(3, 20px)',
+        'tel2': 'repeat(2, 20px)',
+        'tel1': 'repeat(1, 20px)',
       },
-      "fontSize": {
-        "sm": "0.75rem",
-        "base": "0.875rem",
-        "lg": "1rem",
-        "xl": "1.25rem",
-        "2xl": "1.375rem",
-        "3xl": "1.5rem",
-        "4xl": "2rem",
-        "5xl": "2.25rem",
-        "6xl": "2.5rem",
-        "7xl": "4.375rem"
-      },
-      "fontFamily": {
-        "nunito-sans": "Nunito Sans",
-        "oooh-baby": "Oooh Baby",//sera surrement supprimé
-        "michroma": 'Michroma',
-        "scope-one": "Scope One"//sera surrement supprimé
-      },
+      // "colors": {
+      //   "Water": "#00176a",
+      //   "Decoration": "#00092a",
+      //   "Night sky": "#000f46",
+      //   "Waves": "#adbfff",
+      //   "Blue sky": "#0066ff",
+      //   "Pink sky": "#ff00b8",
+      //   "Orange sky": "#ffa800",
+      //   "White": "#f4f7ff"
+      // },
+      // fontFamily: {
+      //   "nunito-sans": "Nunito Sans",
+      //   "oooh-baby": "Oooh Baby",//sera surrement supprimé
+      //   "michroma": 'Michroma',
+      //   "scope-one": "Scope One"//sera surrement supprimé
+      // },
     }
   },
   plugins: []

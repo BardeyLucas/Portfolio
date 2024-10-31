@@ -2,7 +2,7 @@
 <template>
     <footer>
         <div class="grille">
-            <div class="col-start-2 col-span-2">
+            <div class="col-span-12 lg:col-start-2 lg:col-span-2 text-center lg:text-left">
                 <h3 class="text-center">Contacts</h3>
                 <nav>
                     <p>Formulaire</p>
@@ -11,14 +11,14 @@
                     <p>55 rue charles de gaulle 90500 Beaucourt, France</p>
                 </nav>
             </div>
-            <div class="col-start-5 col-span-2">
+            <div class="col-span-12 lg:col-start-5 lg:col-span-2 text-center lg:text-left">
                 <h3 class="text-center">Réseaux</h3>
                 <nav>
                     <a href="#"><p>- Linkedin</p></a>
                     <a href="#"><p>- Instagram</p></a>
                 </nav>
             </div>
-            <div class="col-start-8 col-span-2">
+            <div class="col-span-12 lg:col-start-8 lg:col-span-2 text-center lg:text-left">
                 <h3 class="text-center">Projets</h3>
                 <nav>
                     <RouterLink to="#"><p>- Cardeleon</p></RouterLink>

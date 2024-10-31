@@ -1,6 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import { pb } from '@/backend'
+import Card_Projet from '@/components/Card_Projet.vue'
 import { RouterLink } from 'vue-router'
 import Button from '../components/btnProjetDefault.vue'
 import Card from '@/components/CardTemporaire.vue'
@@ -15,6 +16,9 @@ console.log(projetListe)
   </section>
   <section class="col-span-12">
     <h2>Projet</h2>
+    <nav>
+      <Card_Projet v-for="unProjet in projetListe" :key="unProjet.id" v-bind="unProjet"/>
+    </nav>
   </section>
   <section class="col-span-12">
     <h2>Présentation</h2>

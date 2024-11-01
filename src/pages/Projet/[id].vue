@@ -28,28 +28,28 @@ useHead({
             :record="projet"
             :filename="projet.miniature"/>
     <article class="grille">
-        <div class="col-span-12 flex justify-between">
+        <div class="col-span-12 text-center lg:flex justify-between">
             <p>Année* {{ new Date(projet.date).getFullYear() }}</p>
             <p>Client* {{ projet.client }}</p>
             <a :href="projet.projectLens"><button><p>Tester le projet</p></button></a>
         </div>
-        <div v-if="projet.equipe" class="col-span-6">
+        <div v-if="projet.equipe" class="col-span-12 lg:col-span-6">
             <h2>Description</h2>
             <p>{{ projet.description }}</p>
         </div>
-        <div v-else class="col-span-8">
+        <div v-else class="col-span-12 lg:col-span-8">
             <h2>Description</h2>
             <p>{{ projet.description }}</p>
         </div>
-        <div v-if="projet.equipe" class="col-span-3 col-start-7">
+        <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lg:col-start-7">
             <h2>Réalisations</h2>
             <p>{{ projet.realisations }}</p>
         </div>
-        <div v-else class="col-span-3 col-start-10">
+        <div v-else class="col-span-12 lg:col-span-3 lf:col-start-10">
             <h2>Réalisations</h2>
             <p>{{ projet.realisations }}</p>
         </div>
-        <div v-if="projet.equipe" class="col-span-3 col-start-10">
+        <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lf:col-start-10">
             <h2>Réalisations</h2>
             <p>{{ projet.equipe }}</p>
         </div>

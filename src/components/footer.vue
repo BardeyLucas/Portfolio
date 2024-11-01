@@ -5,7 +5,7 @@
             <div class="col-span-12 lg:col-start-2 lg:col-span-2 text-center lg:text-left">
                 <h3 class="text-center">Contacts</h3>
                 <nav>
-                    <p>Formulaire</p>
+                    <RouterLink to="/formulaire">Formulaire</RouterLink>
                     <p>+33 6 32 34 98 88</p>
                     <p>Bardey.lucas1@gmail.com</p>
                     <p>55 rue charles de gaulle 90500 Beaucourt, France</p>

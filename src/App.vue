@@ -7,7 +7,7 @@ import Footer from './components/footer.vue';
 
 <template>
   <Header/>
-  <main class="grille">
+  <main>
     <RouterView v-slot="{ Component }">
       <Suspense>
         <component :is="Component" :key="$route.path" />

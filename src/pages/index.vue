@@ -8,9 +8,9 @@ import Card from '@/components/CardTemporaire.vue'
 const projetListe = await pb.collection('Projets').getFullList()
 // const route = useRoute('/Projet/[id]')
 // const projet = await pb.collection('')
-console.log(projetListe)
 </script>
 <template>
+  <article class="grille">
   <section class="col-span-12">
     <h1>Lucas Bardey</h1>
   </section>
@@ -42,4 +42,5 @@ console.log(projetListe)
   <section class="col-span-12">
     <h2>compétences</h2>
   </section>
+</article>
 </template>

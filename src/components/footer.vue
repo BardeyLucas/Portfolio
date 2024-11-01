@@ -28,7 +28,7 @@
                 </nav>
             </div>
         </div>
-        <div class="text-center"><p>Mentions légales</p></div>
+        <div class="text-center"><RouterLink to="/Mentions_Legales"><p>Mentions légales</p></RouterLink></div>
         <div class="text-center"><p>@ 2024 Lucas Bardey all rights reserved</p></div>
     </footer>
     </template>

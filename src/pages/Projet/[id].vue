@@ -7,26 +7,27 @@ import ImgPb from '@/components/ImgPb.vue';
 import { useHead } from '@unhead/vue'
 import { useRoute, useRouter } from 'vue-router/auto';
 import sanitizeHtml from 'sanitize-html'
-import type { ProjetsResponse } from '@/pocketbase-types';
+import type { ProjetsResponse,  } from '@/pocketbase-types';
 const route = useRoute('/Projet/[id]')
 const router = useRouter()
 const projet = ref(
     await pb
-        .collection<ProjetsResponse>('Projets')
+        .collection<ProjetsResponse<{page_content: Page_C}>>('Projets')
         .getOne(route.params.id)
 )
 useHead({
     title: () => `Projet : ${projet.value.title}`
 })
+console.log(projet.value.page_content)
 </script>
 <template>
     <div class="grille">
         <h1 class="col-span-12">{{ projet.title }}</h1>
     </div>
     <ImgPb class="w-[100vw] max-w-[100vw]"
-            v-if="projet.miniature"
+            v-if="projet.cover"
             :record="projet"
-            :filename="projet.miniature"/>
+            :filename="projet.cover"/>
     <article class="grille">
         <div class="col-span-12 text-center lg:flex justify-between">
             <p>Année* {{ new Date(projet.date).getFullYear() }}</p>
@@ -53,6 +54,10 @@ useHead({
             <h2>Réalisations</h2>
             <p>{{ projet.equipe }}</p>
         </div>
-        <div v-html="sanitizeHtml(projet.page_content)"></div>
+        <div class="col-12 col-span-12" v-html="sanitizeHtml(projet.page_content)"></div>
+        <ImgPb
+            v-if="projet.image_content[0]"
+            :record="projet"
+            :filename="projet.image_content[0]"/>
     </article>
 </template>

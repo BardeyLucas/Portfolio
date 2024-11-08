@@ -7,19 +7,18 @@ import ImgPb from '@/components/ImgPb.vue';
 import { useHead } from '@unhead/vue'
 import { useRoute, useRouter } from 'vue-router/auto';
 import sanitizeHtml from 'sanitize-html'
-import type { ProjetsResponse,  } from '@/pocketbase-types';
+import type { ProjetsResponse, UsersResponse, PageContentResponse } from '@/pocketbase-types';
 const route = useRoute('/Projet/[id]')
 const router = useRouter()
 const projet = ref(
     await pb
-        .collection<ProjetsResponse<{page_content: Page_C}>>('Projets')
-        .getOne(route.params.id)
+        .collection<ProjetsResponse<{page_content: PageContentResponse[]}>>('Projets')
+        .getOne(route.params.id, {expand: 'page_content'})
 )
 useHead({
     title: () => `Projet : ${projet.value.title}`
 })
-console.log(projet.value.page_content)
-</script>
+console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
 <template>
     <div class="grille">
         <h1 class="col-span-12">{{ projet.title }}</h1>
@@ -54,7 +53,8 @@ console.log(projet.value.page_content)
             <h2>Réalisations</h2>
             <p>{{ projet.equipe }}</p>
         </div>
-        <div class="col-12 col-span-12" v-html="sanitizeHtml(projet.page_content)"></div>
+        <div class="col-span-12" v-html="sanitizeHtml(projet.expand?.page_content[0].Content || '')"></div>
+        <p>{{ projet.expand?.page_content[0].Test }}</p>
         <ImgPb
             v-if="projet.image_content[0]"
             :record="projet"

@@ -37,6 +37,7 @@ export type AuthSystemFields<T = never> = {
 
 export type PageContentRecord = {
 	Content?: HTMLString
+	Test?: string
 }
 
 export type ProjetsRecord = {

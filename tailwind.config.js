@@ -2,6 +2,23 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,vue}'],
   theme: {
+      "colors": {
+       "Background": "#0d001c",
+       "Bleu": "#00b2ff",
+       "Rose": "#ff007a",
+       "Orange": "#ff8d1c",
+       "Violet": "#8a0c73"
+      },
+      "fontFamily": {
+       "nunito-sans": "Nunito Sans",
+       "oooh-baby": "Oooh Baby",
+       "michroma": "Michroma",
+       "scope-one": "Scope One"
+      },
+      "boxShadow": {
+       "Circle-shadow": "inset 0px 0px 5px 0px rgba(0,0,0,0.25)",
+       "Search-shadow": "0px 0px 10px 0px rgba(0,0,0,0.5)"
+      },
     extend: {
       gridTemplateColumns: {
         'principal': 'repeat(12, 1fr)',

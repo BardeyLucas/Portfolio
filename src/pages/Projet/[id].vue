@@ -20,7 +20,7 @@ useHead({
 })
 console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
 <template>
-    <div class="grille">
+    <div class="grille pb-12 font-michroma text-6xl">
         <h1 class="col-span-12">{{ projet.title }}</h1>
     </div>
     <ImgPb class="w-[100vw] max-w-[100vw]"
@@ -35,23 +35,23 @@ console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
         </div>
         <div v-if="projet.equipe" class="col-span-12 lg:col-span-6">
             <h2>Description</h2>
-            <p>{{ projet.description }}</p>
+            <div v-html="sanitizeHtml(projet.description)"></div>
         </div>
         <div v-else class="col-span-12 lg:col-span-8">
             <h2>Description</h2>
-            <p>{{ projet.description }}</p>
+            <div v-html="sanitizeHtml(projet.description)"></div>
         </div>
         <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lg:col-start-7">
             <h2>Réalisations</h2>
-            <p>{{ projet.realisations }}</p>
+            <div v-html="sanitizeHtml(projet.realisations)"></div>
         </div>
         <div v-else class="col-span-12 lg:col-span-3 lf:col-start-10">
             <h2>Réalisations</h2>
-            <p>{{ projet.realisations }}</p>
+            <div v-html="sanitizeHtml(projet.realisations)"></div>
         </div>
         <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lf:col-start-10">
-            <h2>Réalisations</h2>
-            <p>{{ projet.equipe }}</p>
+            <h2>Equipe</h2>
+            <div v-html="sanitizeHtml(projet.equipe)"></div>
         </div>
         <div class="col-span-12" v-html="sanitizeHtml(projet.expand?.page_content[0].Content || '')"></div>
         <p>{{ projet.expand?.page_content[0].Test }}</p>

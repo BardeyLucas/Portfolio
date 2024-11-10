@@ -1,6 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-    <footer class="bg-Background border-t-Rose border-t-2 text-Blanc">
+    <footer class="bg-Background border-t-Rose border-t text-Blanc">
         <div class="grille pb-5">
             <div class="col-span-12 lg:col-start-2 lg:col-span-2 text-center lg:text-left">
                 <h3 class="flex items-center justify-center h-24 font-michroma text-2xl">Contacts</h3>
@@ -29,7 +29,7 @@
                 </nav>
             </div>
         </div>
-        <div class="flex items-center justify-center h-16 border-t-Rose border-t-2 text-lg font-michroma"><RouterLink to="/Mentions_Legales"><p>Mentions légales</p></RouterLink></div>
-        <div class="flex items-center justify-center h-16 border-t-Rose border-t-2 text-lg font-michroma"><p>@ 2024 Lucas Bardey all rights reserved</p></div>
+        <div class="flex items-center justify-center h-16 border-t-Rose border-t text-lg font-michroma"><RouterLink to="/Mentions_Legales"><p>Mentions légales</p></RouterLink></div>
+        <div class="flex items-center justify-center h-16 border-t-Rose border-t text-lg font-michroma"><p>@ 2024 Lucas Bardey all rights reserved</p></div>
     </footer>
     </template>

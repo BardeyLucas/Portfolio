@@ -5,14 +5,19 @@ import Card_Projet from '@/components/Card_Projet.vue'
 import { RouterLink } from 'vue-router'
 import Button from '../components/btnProjetDefault.vue'
 import Card from '@/components/CardTemporaire.vue'
-const projetListe = await pb.collection('Projets').getFullList()
+import { onRenderTracked } from 'vue'
+const projetListe = await pb.collection('Projets').getFullList({
+  sort: 'Order',
+})
 // const route = useRoute('/Projet/[id]')
 // const projet = await pb.collection('')
 </script>
 <template>
   <article class="grille">
   <section class="col-span-12" style="height: calc(100vh - 70px);">
-    <h1 class="font-michroma text-6xl">Lucas Bardey</h1>
+    <div class="col12">
+      <h1 class="font-michroma text-6xl col-span-4 col-start-5 text-center">Lucas Bardey</h1>
+    </div>
   </section>
   <section class="col-span-12">
     <h2 class="font-michroma text-4xl">Projet</h2>

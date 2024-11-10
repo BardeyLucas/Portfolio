@@ -19,33 +19,33 @@ const projetListe = await pb.collection('Projets').getFullList({
       <h1 class="font-michroma text-6xl col-span-4 col-start-5 text-center">Lucas Bardey</h1>
     </div>
   </section>
-  <section class="col-span-12">
-    <h2 class="font-michroma text-4xl">Projet</h2>
+  <section class="col-span-12 pb-44">
+    <h2 class="font-michroma text-5xl mt-12 mb-24">Projet</h2>
     <nav>
       <Card_Projet v-for="unProjet in projetListe" :key="unProjet.id" v-bind="unProjet"/>
     </nav>
   </section>
-  <section class="col-span-12">
-    <h2>Présentation</h2>
-    <p>
+  <section class="col-span-12 col12 pb-18">
+    <h2 class="col-span-12 font-michroma text-5xl mt-12 mb-28">Présentation</h2>
+    <p class="text-3xl col-span-8 mb-10">
       Bonjour, je m'appelle Lucas Bardey, j’ai 20 ans et j’étudie actuellement en France en section
       Métiers du Multimédia et de l’Internet, avec une spécialisation en développement web.
     </p>
 
-    <p>
+    <p class="text-3xl col-span-8 mb-10">
       Durant mes études, j’ai développé un large éventail de compétences, allant du développement
       web au graphisme, en passant par la communication. Cette polyvalence me permet d’aborder les
       projets sous plusieurs angles, que ce soit en conception technique ou visuelle.
     </p>
 
-    <p>
+    <p class="text-3xl col-span-8">
       Aujourd’hui, je m’épanouis dans la création de sites web. À plus long terme, mon ambition est
       de devenir diplômé en développement web et en développement de jeux vidéo, deux secteurs qui
       me passionnent et qui contribueront à bâtir mon avenir professionnel.
     </p>
   </section>
-  <section class="col-span-12">
-    <h2>compétences</h2>
+  <section class="col-span-12 col12">
+    <h2 class="col-span-12 font-michroma text-5xl mt-12 mb-28">compétences</h2>
   </section>
 </article>
 </template>

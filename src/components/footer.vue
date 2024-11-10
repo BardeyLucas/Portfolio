@@ -29,7 +29,7 @@
                 </nav>
             </div>
         </div>
-        <div class="flex items-center justify-center h-16 border-t-Rose border-t-2 text-lg"><RouterLink to="/Mentions_Legales"><p>Mentions légales</p></RouterLink></div>
-        <div class="flex items-center justify-center h-16 border-t-Rose border-t-2 text-lg"><p>@ 2024 Lucas Bardey all rights reserved</p></div>
+        <div class="flex items-center justify-center h-16 border-t-Rose border-t-2 text-lg font-michroma"><RouterLink to="/Mentions_Legales"><p>Mentions légales</p></RouterLink></div>
+        <div class="flex items-center justify-center h-16 border-t-Rose border-t-2 text-lg font-michroma"><p>@ 2024 Lucas Bardey all rights reserved</p></div>
     </footer>
     </template>

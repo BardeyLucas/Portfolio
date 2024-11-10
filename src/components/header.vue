@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router';
 const lang = ref(false)
 </script>
 <template>
-    <header class="lg:h-[70px] lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex lg:text-2xl">
+    <header class="lg:h-40 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex lg:text-2xl">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
             <RouterLink to="/">
                 <p>Acceuil</p>

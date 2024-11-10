@@ -28,7 +28,7 @@ console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
             :record="projet"
             :filename="projet.cover"/>
     <article class="grille">
-        <div class="col-span-12 text-center lg:flex justify-between">
+        <div class="col-span-12 h-36 text-center lg:flex justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-12 mt-12 rounded-[50px] font-michroma text-2xl">
             <p>Année* {{ new Date(projet.date).getFullYear() }}</p>
             <p>Client* {{ projet.client }}</p>
             <a :href="projet.projectLens"><button><p>Tester le projet</p></button></a>

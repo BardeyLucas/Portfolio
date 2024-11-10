@@ -41,16 +41,17 @@ export type PageContentRecord = {
 }
 
 export type ProjetsRecord = {
+	Order?: number
 	client?: string
 	cover?: string
 	date?: IsoDateString
-	description?: string
-	equipe?: string
+	description?: HTMLString
+	equipe?: HTMLString
 	image_content?: string[]
 	miniature?: string
 	page_content?: RecordIdString[]
 	projectLens?: string
-	realisations?: string
+	realisations?: HTMLString
 	title?: string
 	titleAlt?: string
 }

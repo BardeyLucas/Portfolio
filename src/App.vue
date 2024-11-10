@@ -7,7 +7,7 @@ import Footer from './components/footer.vue';
 
 <template>
   <Header/>
-  <main>
+  <main class="bg-Background text-Blanc pt-[70px] font-nunito-sans">
     <RouterView v-slot="{ Component }">
       <Suspense>
         <component :is="Component" :key="$route.path" />

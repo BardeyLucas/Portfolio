@@ -7,13 +7,12 @@ export default {
        "Bleu": "#00b2ff",
        "Rose": "#ff007a",
        "Orange": "#ff8d1c",
-       "Violet": "#8a0c73"
+       "Violet": "#8a0c73",
+       "Blanc": "#f9f5ff"
       },
       "fontFamily": {
        "nunito-sans": "Nunito Sans",
-       "oooh-baby": "Oooh Baby",
        "michroma": "Michroma",
-       "scope-one": "Scope One"
       },
       "boxShadow": {
        "Circle-shadow": "inset 0px 0px 5px 0px rgba(0,0,0,0.25)",

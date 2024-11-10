@@ -11,11 +11,11 @@ const projetListe = await pb.collection('Projets').getFullList()
 </script>
 <template>
   <article class="grille">
-  <section class="col-span-12">
-    <h1>Lucas Bardey</h1>
+  <section class="col-span-12" style="height: calc(100vh - 70px);">
+    <h1 class="font-michroma text-6xl">Lucas Bardey</h1>
   </section>
   <section class="col-span-12">
-    <h2>Projet</h2>
+    <h2 class="font-michroma text-4xl">Projet</h2>
     <nav>
       <Card_Projet v-for="unProjet in projetListe" :key="unProjet.id" v-bind="unProjet"/>
     </nav>

@@ -6,6 +6,12 @@ import { RouterLink } from 'vue-router'
 import Button from '../components/btnProjetDefault.vue'
 import Card from '@/components/CardTemporaire.vue'
 import { onRenderTracked } from 'vue'
+import Html from '@/components/html.vue'
+import Css from '@/components/css.vue'
+import Javascript from '@/components/javascript.vue'
+import VueJS from '@/components/vueJS.vue'
+import Figma from '@/components/figma.vue'
+import Illustrator from '@/components/Illustrator.vue'
 const projetListe = await pb.collection('Projets').getFullList({
   sort: 'Order',
 })
@@ -44,8 +50,26 @@ const projetListe = await pb.collection('Projets').getFullList({
       me passionnent et qui contribueront à bâtir mon avenir professionnel.
     </p>
   </section>
-  <section class="col-span-12 col12">
+  <section class="col-span-12 col12 pb-48">
     <h2 class="col-span-12 font-michroma text-5xl mt-12 mb-28">compétences</h2>
+    <div class="col-span-2 col-start-2 h-32 flex items-center">
+    <Html class="w-28"/>
+    </div>
+    <div class="col-span-2 col-start-4 h-32 flex items-center">
+    <Css class="w-28"/>
+    </div>
+    <div class="col-span-2 col-start-6 h-32 flex items-center"> 
+    <Javascript class="w-28"/>
+    </div> 
+    <div class="col-span-2 col-start-8 h-32 flex items-center">
+    <VueJS class="w-28"/>
+    </div>
+    <div class="col-span-3 col-start-3 mt-24 h-32 flex items-center">
+    <Figma class="w-[320px]"/>
+    </div>
+    <div class="col-span-2 col-start-7 mt-24 h-32 flex items-center">
+    <Illustrator class="w-28"/>
+    </div>
   </section>
 </article>
 </template>

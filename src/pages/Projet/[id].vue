@@ -23,7 +23,7 @@ console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
     <div class="grille pb-12 font-michroma text-6xl">
         <h1 class="col-span-12">{{ projet.title }}</h1>
     </div>
-    <ImgPb class="w-[100vw] max-w-[100vw]"
+    <ImgPb class="max-w-full"
             v-if="projet.cover"
             :record="projet"
             :filename="projet.cover"/>

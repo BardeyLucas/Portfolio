@@ -6,14 +6,15 @@ import Footer from './components/footer.vue';
 </script>
 
 <template>
-  <Header :currentRoute="$route.path"/>
-  <Header/>
-  <main class="bg-Background text-Blanc pt-40 font-nunito-sans">
-    <RouterView v-slot="{ Component }">
-      <Suspense>
-        <component :is="Component" :key="$route.path" />
-      </Suspense>
-    </RouterView>
-  </main>
+  <div>
+    <Header :currentRoute="$route.path"/>
+    <main class="bg-Background text-Blanc pt-52 font-nunito-sans">
+      <RouterView v-slot="{ Component }">
+        <Suspense>
+          <component :is="Component" :key="$route.path" />
+        </Suspense>
+      </RouterView>
+    </main>
+  </div>
   <Footer/>
 </template>

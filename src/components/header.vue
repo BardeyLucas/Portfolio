@@ -27,5 +27,32 @@ const isNotHomePage = computed(() => route.path != '/');
                 <button>Menu</button>
             </nav>
         </nav>
+        <nav class="fixed bg-Rose right-0 hidden" style="margin-right: calc((100vw - 1420px)/2);">
+            <nav class="flex gap-5">
+                <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
+                <button>Menu</button>
+            </nav>
+            <RouterLink to="/Projet">
+                <p>Work</p>
+            </RouterLink>
+            <RouterLink to="/Projet/hzyx8uz709k7b6w">
+                <p>Cardeleon</p>
+            </RouterLink>
+            <RouterLink to="/Projet/3any1equfk6yz38">
+                <p>Redesign architectural</p>
+            </RouterLink>
+            <RouterLink to="/Projet">
+                <p>Site pour un tournois Esport</p>
+            </RouterLink>
+            <RouterLink to="/Projet/6ym7rewppwl81f4">
+                <p>Randoala</p>
+            </RouterLink>
+            <RouterLink to="/Mentions_Legales">
+                <p>A propos</p>
+            </RouterLink>
+            <RouterLink to="/formulaire">
+                <p>Contact</p>
+            </RouterLink>
+        </nav>
     </header>
 </template>

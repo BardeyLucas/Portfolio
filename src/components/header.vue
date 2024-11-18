@@ -28,15 +28,15 @@ const isNotHomePage = computed(() => route.path != '/');
                 <button @click="activeMenu =! activeMenu">Menu</button>
             </nav>
         </nav>
-        <nav class="absolute h-screen -right-12 pl-12 pr-24 text-right hidden" :class="{'!block':activeMenu}" style="margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #00092a 0%, rgba(0,9,42,0.9) 30%, rgba(0,9,42,0) 100%);">
+        <nav class="absolute h-screen -right-12 pl-12 pr-24 text-right hidden" :class="{'!block':activeMenu}" style="margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #0D001C 0%, rgba(0,9,42,0.8) 50%, rgba(0,9,42,0) 100%);">
             <nav class="flex justify-between gap-5 w-auto h-40">
                 <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
                 <button class="block lg:hidden" @click="activeMenu =! activeMenu">Menu</button>
                 <button class="hidden lg:block" @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
-            <nav class="flex flex-col gap-7">
+            <nav class="flex flex-col gap-10">
                 <RouterLink to="/Projet">
-                    <p>Work</p>
+                    <p class="text-3xl">Work</p>
                 </RouterLink>
                 <RouterLink to="/Projet/hzyx8uz709k7b6w">
                     <p>Cardeleon</p>
@@ -51,10 +51,10 @@ const isNotHomePage = computed(() => route.path != '/');
                     <p>Randoala</p>
                 </RouterLink>
                 <RouterLink to="/Mentions_Legales">
-                    <p>A propos</p>
+                    <p class="text-3xl">A propos</p>
                 </RouterLink>
                 <RouterLink to="/formulaire">
-                    <p>Contact</p>
+                    <p class="text-3xl">Contact</p>
                 </RouterLink>
             </nav>
         </nav>

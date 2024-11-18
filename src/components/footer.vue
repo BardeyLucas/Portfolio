@@ -14,18 +14,18 @@
             <div class="col-span-12 lg:col-start-5 lg:col-span-2 text-center lg:text-left">
                 <h3 class="flex items-center justify-center h-24 font-michroma text-2xl">Réseaux</h3>
                 <nav class="gap-y-3 flex flex-col text-lg">
-                    <a href="#"><p>- Linkedin</p></a>
-                    <a href="#"><p>- GitHub</p></a>
-                    <a href="#"><p>- Instagram</p></a>
+                    <a href="#"><p>Linkedin</p></a>
+                    <a href="#"><p>GitHub</p></a>
+                    <a href="#"><p>Instagram</p></a>
                 </nav>
             </div>
             <div class="col-span-12 lg:col-start-8 lg:col-span-2 text-center lg:text-left">
                 <h3 class="flex items-center justify-center h-24 font-michroma text-2xl">Projets</h3>
                 <nav class="gap-y-3 flex flex-col text-lg">
-                    <RouterLink to="#"><p>- Cardeleon</p></RouterLink>
-                    <RouterLink to="#"><p>- Architecture</p></RouterLink>
-                    <RouterLink to="#"><p>- Logo</p></RouterLink>
-                    <RouterLink to="#"><p>- Randoala</p></RouterLink>
+                    <RouterLink to="#"><p>Cardeleon</p></RouterLink>
+                    <RouterLink to="#"><p>Architecture</p></RouterLink>
+                    <RouterLink to="#"><p>Logo</p></RouterLink>
+                    <RouterLink to="#"><p>Randoala</p></RouterLink>
                 </nav>
             </div>
         </div>

@@ -4,7 +4,7 @@
 
 @layer components  {
     .grille {
-      @apply grid lg:grid-cols-principal grid-cols-telprincipal justify-center gap-x-2.5 lg:gap-x-5;
+      @apply grid lg:grid-cols-principal grid-cols-telprincipal justify-center gap-x-2.5 lg:gap-x-5 lg:px-12;
     }
     .col1 {
         @apply grid lg:grid-cols-pc1 grid-cols-tel1 justify-center gap-x-2.5 lg:gap-x-5 lg:px-0;

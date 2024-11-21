@@ -29,29 +29,29 @@ console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
             :filename="projet.cover"/>
     <article>
         <section class="grille pb-12">
-            <div class="col-span-12 h-24 text-center lg:flex justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-12 mt-12 rounded-[50px] font-michroma text-xl mb-12">
+            <div class="col-span-12 h-36 lg:h-24 text-center flex flex-col lg:flex-row justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-12 mt-6 lg:mt-12 rounded-[50px] font-michroma text-base lg:text-xl mb-6 lg:mb-12 py-5 lg:py-0">
                 <p>Année* {{ new Date(projet.date).getFullYear() }}</p>
                 <p>Client* {{ projet.client }}</p>
                 <a :href="projet.projectLens"><button><p>Tester le projet</p></button></a>
             </div>
             <div v-if="projet.equipe" class="col-span-12 lg:col-span-6">
-                <h2 class="font-michroma text-2xl mb-4">Description</h2>
+                <h2 class="font-michroma text-lg lg:text-2xl mb-4">Description</h2>
                 <div class="flex flex-col gap-3" v-html="sanitizeHtml(projet.description)"></div>
             </div>
             <div v-else class="col-span-12 lg:col-span-8">
-                <h2 class="font-michroma text-2xl mb-4">Description</h2>
+                <h2 class="font-michroma text-lg lg:text-2xl mb-4">Description</h2>
                 <div class="flex flex-col gap-3" v-html="sanitizeHtml(projet.description)"></div>
             </div>
-            <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lg:col-start-7">
-                <h2 class="font-michroma text-2xl mb-4">Réalisations</h2>
+            <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lg:col-start-7 mt-12 lg:mt-0">
+                <h2 class="font-michroma text-lg lg:text-2xl mb-4">Réalisations</h2>
                 <div class="leading-8" v-html="sanitizeHtml(projet.realisations)"></div>
             </div>
-            <div v-else class="col-span-12 lg:col-span-4 lf:col-start-10">
-                <h2 class="font-michroma text-2xl mb-4">Réalisations</h2>
+            <div v-else class="col-span-12 lg:col-span-4 lf:col-start-10 mt-12 lg:mt-0">
+                <h2 class="font-michroma text-lg lg:text-2xl mb-4">Réalisations</h2>
                 <div class=" leading-8" v-html="sanitizeHtml(projet.realisations)"></div>
             </div>
-            <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lf:col-start-10">
-                <h2 class="font-michroma text-2xl mb-4">Equipe</h2>
+            <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lf:col-start-10 mt-12 lg:mt-0">
+                <h2 class="font-michroma text-lg lg:text-2xl mb-4">Equipe</h2>
                 <div class="leading-8" v-html="sanitizeHtml(projet.equipe)"></div>
             </div>
         </section>

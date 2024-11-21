@@ -36,25 +36,25 @@ const isNotHomePage = computed(() => route.path != '/');
                 <button @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
             <nav class="flex flex-col gap-12 lg:gap-10 text-center">
-                <RouterLink to="/Projet">
+                <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
                     <p class="text-2xl">Work</p>
                 </RouterLink>
-                <RouterLink to="/Projet/hzyx8uz709k7b6w">
+                <RouterLink to="/Projet/hzyx8uz709k7b6w" @click="activeMenu =! activeMenu">
                     <p class="text-lg">Cardeleon</p>
                 </RouterLink>
-                <RouterLink to="/Projet/3any1equfk6yz38">
+                <RouterLink to="/Projet/3any1equfk6yz38" @click="activeMenu =! activeMenu">
                     <p class="text-lg">Redesign architectural</p>
                 </RouterLink>
-                <RouterLink to="/Projet">
+                <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
                     <p class="text-lg">Site pour un tournois Esport</p>
                 </RouterLink>
-                <RouterLink to="/Projet/6ym7rewppwl81f4">
+                <RouterLink to="/Projet/6ym7rewppwl81f4" @click="activeMenu =! activeMenu">
                     <p class="text-lg">Randoala</p>
                 </RouterLink>
-                <RouterLink to="/Mentions_Legales">
+                <RouterLink to="/Mentions_Legales" @click="activeMenu =! activeMenu">
                     <p class="text-2xl">A propos</p>
                 </RouterLink>
-                <RouterLink to="/formulaire">
+                <RouterLink to="/formulaire" @click="activeMenu =! activeMenu">
                     <p class="text-2xl">Contact</p>
                 </RouterLink>
             </nav>

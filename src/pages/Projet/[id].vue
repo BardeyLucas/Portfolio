@@ -20,7 +20,7 @@ useHead({
 })
 console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
 <template>
-    <div class="grille pb-12 font-michroma text-6xl">
+    <div class="grille pb-6 font-michroma text-4xl">
         <h1 class="col-span-12">{{ projet.title }}</h1>
     </div>
     <ImgPb class="max-w-full"
@@ -29,29 +29,29 @@ console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
             :filename="projet.cover"/>
     <article>
         <section class="grille pb-12">
-            <div class="col-span-12 h-36 text-center lg:flex justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-12 mt-12 rounded-[50px] font-michroma text-2xl mb-12">
+            <div class="col-span-12 h-24 text-center lg:flex justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-12 mt-12 rounded-[50px] font-michroma text-xl mb-12">
                 <p>Année* {{ new Date(projet.date).getFullYear() }}</p>
                 <p>Client* {{ projet.client }}</p>
                 <a :href="projet.projectLens"><button><p>Tester le projet</p></button></a>
             </div>
             <div v-if="projet.equipe" class="col-span-12 lg:col-span-6">
-                <h2 class="font-michroma text-3xl mb-4">Description</h2>
+                <h2 class="font-michroma text-2xl mb-4">Description</h2>
                 <div class="flex flex-col gap-3" v-html="sanitizeHtml(projet.description)"></div>
             </div>
             <div v-else class="col-span-12 lg:col-span-8">
-                <h2 class="font-michroma text-3xl mb-4">Description</h2>
+                <h2 class="font-michroma text-2xl mb-4">Description</h2>
                 <div class="flex flex-col gap-3" v-html="sanitizeHtml(projet.description)"></div>
             </div>
             <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lg:col-start-7">
-                <h2 class="font-michroma text-3xl mb-4">Réalisations</h2>
+                <h2 class="font-michroma text-2xl mb-4">Réalisations</h2>
                 <div class="leading-8" v-html="sanitizeHtml(projet.realisations)"></div>
             </div>
             <div v-else class="col-span-12 lg:col-span-4 lf:col-start-10">
-                <h2 class="font-michroma text-3xl mb-4">Réalisations</h2>
+                <h2 class="font-michroma text-2xl mb-4">Réalisations</h2>
                 <div class=" leading-8" v-html="sanitizeHtml(projet.realisations)"></div>
             </div>
             <div v-if="projet.equipe" class="col-span-12 lg:col-span-3 lf:col-start-10">
-                <h2 class="font-michroma text-3xl mb-4">Equipe</h2>
+                <h2 class="font-michroma text-2xl mb-4">Equipe</h2>
                 <div class="leading-8" v-html="sanitizeHtml(projet.equipe)"></div>
             </div>
         </section>

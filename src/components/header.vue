@@ -18,7 +18,7 @@ const isNotHomePage = computed(() => route.path != '/');
 </script>
 
 <template>
-    <header class="lg:h-40 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex lg:text-2xl" :class="{'! bg-gradient-to-t from-[#000000] to-Background':isNotHomePage}">
+    <header class="lg:h-40 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex lg:text-xl" :class="{'! bg-gradient-to-t from-[#000000] to-Background':isNotHomePage}">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
             <RouterLink to="/">
                 <p>Acceuil</p>
@@ -34,27 +34,27 @@ const isNotHomePage = computed(() => route.path != '/');
                 <button class="block lg:hidden" @click="activeMenu =! activeMenu">Menu</button>
                 <button class="hidden lg:block" @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
-            <nav class="flex flex-col gap-10">
+            <nav class="flex flex-col gap-10 text">
                 <RouterLink to="/Projet">
-                    <p class="text-3xl">Work</p>
+                    <p class="text-2xl">Work</p>
                 </RouterLink>
                 <RouterLink to="/Projet/hzyx8uz709k7b6w">
-                    <p>Cardeleon</p>
+                    <p class="text-lg">Cardeleon</p>
                 </RouterLink>
                 <RouterLink to="/Projet/3any1equfk6yz38">
-                    <p>Redesign architectural</p>
+                    <p class="text-lg">Redesign architectural</p>
                 </RouterLink>
                 <RouterLink to="/Projet">
-                    <p>Site pour un tournois Esport</p>
+                    <p class="text-lg">Site pour un tournois Esport</p>
                 </RouterLink>
                 <RouterLink to="/Projet/6ym7rewppwl81f4">
-                    <p>Randoala</p>
+                    <p class="text-lg">Randoala</p>
                 </RouterLink>
                 <RouterLink to="/Mentions_Legales">
-                    <p class="text-3xl">A propos</p>
+                    <p class="text-2xl">A propos</p>
                 </RouterLink>
                 <RouterLink to="/formulaire">
-                    <p class="text-3xl">Contact</p>
+                    <p class="text-2xl">Contact</p>
                 </RouterLink>
             </nav>
         </nav>

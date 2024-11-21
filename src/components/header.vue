@@ -27,7 +27,7 @@ const isNotHomePage = computed(() => route.path != '/');
             <nav class="flex gap-5">
                 <button class="hidden lg:block"><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
                 <button class="hidden lg:block" @click="activeMenu =! activeMenu">Menu</button>
-                <button class="lg:hidden"><Burger/></button>
+                <button class="lg:hidden" @click="activeMenu =! activeMenu"><Burger/></button>
             </nav>
         </nav>
         <nav class="absolute h-screen -right-12 pl-12 pr-24 text-right hidden" :class="{'!block':activeMenu}" style="margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #0D001C 0%, rgba(0,9,42,0.8) 50%, rgba(0,9,42,0) 100%);">

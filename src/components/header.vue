@@ -4,6 +4,7 @@
 import { ref, reactive, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import Croix from './icons/Croix.vue';
+import Burger from './icons/Burger.vue';
 // const language = reactive({
 //   lang: false, // false pour FR, true pour EN
 // });
@@ -18,14 +19,15 @@ const isNotHomePage = computed(() => route.path != '/');
 </script>
 
 <template>
-    <header class="lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex lg:text-xl" :class="{'! bg-gradient-to-t from-[#000000] to-Background':isNotHomePage}">
+    <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex text-lg lg:text-xl" :class="{'! bg-gradient-to-t from-[#000000] to-Background':isNotHomePage}">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
             <RouterLink to="/">
                 <p>Acceuil</p>
             </RouterLink>
             <nav class="flex gap-5">
-                <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
-                <button @click="activeMenu =! activeMenu">Menu</button>
+                <button class="hidden lg:block"><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
+                <button class="hidden lg:block" @click="activeMenu =! activeMenu">Menu</button>
+                <button class="lg:hidden"><Burger/></button>
             </nav>
         </nav>
         <nav class="absolute h-screen -right-12 pl-12 pr-24 text-right hidden" :class="{'!block':activeMenu}" style="margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #0D001C 0%, rgba(0,9,42,0.8) 50%, rgba(0,9,42,0) 100%);">

@@ -22,7 +22,7 @@ const projetListe = await pb.collection('Projets').getFullList({
   <article class="grille">
   <section class="col-span-12" style="height: calc(100vh - 70px);">
     <div class="col12">
-      <h1 class="font-michroma text-6xl col-span-4 col-start-5 text-center">Lucas Bardey</h1>
+      <h1 class="font-michroma text-4xl lg:text-6xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center">Lucas Bardey</h1>
     </div>
   </section>
   <section class="col-span-12 pb-20">

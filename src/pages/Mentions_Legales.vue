@@ -2,7 +2,7 @@
     <div class="grille">
         <h1 class="col-span-12 pb-12 font-michroma text-4xl">Mentions légales</h1>
 
-        <ul class="col-start-2 col-span-11 pt-6">
+        <ul class="col-start-2 col-span-10 pt-6">
             <li class="mb-12">
                 <h2 class="mb-5 font-michroma text-2xl">1. Informations légales</h2>
                 <p class="">Le fournisseur responsable de ce site Internet au sens de la loi sur la protection des données est : Lucas BARDEY - 55 Rue charles de gaulle, 90500 Beaucourt - Tel : 06 32 34 98 84 - Bardey.lucas1@gmail.com.</p>

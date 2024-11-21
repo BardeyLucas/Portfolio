@@ -18,7 +18,7 @@ const isNotHomePage = computed(() => route.path != '/');
 </script>
 
 <template>
-    <header class="lg:h-40 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex lg:text-xl" :class="{'! bg-gradient-to-t from-[#000000] to-Background':isNotHomePage}">
+    <header class="lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex lg:text-xl" :class="{'! bg-gradient-to-t from-[#000000] to-Background':isNotHomePage}">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
             <RouterLink to="/">
                 <p>Acceuil</p>

@@ -54,21 +54,27 @@ const projetListe = await pb.collection('Projets').getFullList({
     <h2 class="col-span-12 font-michroma text-xl lg:text-3xl mt-14 lg:mb-12">compétences</h2>
     <div class="col-span-2 col-start-1 lg:col-start-2 h-32 flex items-center">
     <Html class="w-20"/>
+    <p class="hidden">HTML</p>
     </div>
     <div class="col-span-2 col-start-4 lg:col-start-4 h-32 flex items-center">
     <Css class="w-20"/>
+    <p class="hidden">CSS</p>
     </div>
     <div class="col-span-2 col-start-7 lg:col-start-6 h-32 flex items-center"> 
     <Javascript class="w-20"/>
+    <p class="hidden">Javascript</p>
     </div> 
     <div class="col-span-2 col-start-10 lg:col-start-8 h-32 flex items-center">
     <VueJS class="w-20"/>
+    <p class="hidden">VUEJS</p>
     </div>
     <div class="col-span-3 col-start-4 lg:col-start-3 lg:mt-24 lg:h-32 flex items-center">
     <Figma class="w-[230px]"/>
+    <p class="hidden">Figma</p>
     </div>
     <div class="col-span-2 col-start-8 lg:col-start-7 lg:mt-24 lg:h-32 flex items-center">
     <Illustrator class="w-20"/>
+    <p class="hidden">Illustrator</p>
     </div>
   </section>
 </article>

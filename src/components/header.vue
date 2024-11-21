@@ -45,7 +45,7 @@ const isNotHomePage = computed(() => route.path != '/');
                 <RouterLink to="/Projet/3any1equfk6yz38" @click="activeMenu =! activeMenu">
                     <p class="text-lg">Redesign architectural</p>
                 </RouterLink>
-                <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
+                <RouterLink to="/Projet/thxvj0r54z3ynoj" @click="activeMenu =! activeMenu">
                     <p class="text-lg">Site pour un tournois Esport</p>
                 </RouterLink>
                 <RouterLink to="/Projet/6ym7rewppwl81f4" @click="activeMenu =! activeMenu">

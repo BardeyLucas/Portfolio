@@ -30,13 +30,12 @@ const isNotHomePage = computed(() => route.path != '/');
                 <button class="lg:hidden" @click="activeMenu =! activeMenu"><Burger/></button>
             </nav>
         </nav>
-        <nav class="absolute h-screen -right-12 pl-12 pr-24 text-right hidden" :class="{'!block':activeMenu}" style="margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #0D001C 0%, rgba(0,9,42,0.8) 50%, rgba(0,9,42,0) 100%);">
+        <nav class="absolute h-screen lg:-right-12 px-5 lg:pl-12 lg:pr-24 text-right hidden nav__menu w-screen lg:w-auto" :class="{'!block':activeMenu}">
             <nav class="flex justify-between gap-5 w-auto h-40">
                 <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
-                <button class="block lg:hidden" @click="activeMenu =! activeMenu">Menu</button>
-                <button class="hidden lg:block" @click="activeMenu =! activeMenu"><Croix/></button>
+                <button @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
-            <nav class="flex flex-col gap-10 text">
+            <nav class="flex flex-col gap-12 lg:gap-10 text-center">
                 <RouterLink to="/Projet">
                     <p class="text-2xl">Work</p>
                 </RouterLink>

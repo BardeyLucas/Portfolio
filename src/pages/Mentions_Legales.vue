@@ -1,6 +1,6 @@
 <template>
     <div class="grille">
-        <h1 class="col-span-12 pb-6 lg:pb-12 font-michroma text-xl lg:text-4xl">Mentions légales</h1>
+        <h1 class="col-span-12 mt-8 pb-6 lg:pb-12 font-michroma text-xl lg:text-4xl">Mentions légales</h1>
 
         <ul class="col-start-2 col-span-10 pt-6">
             <li class="mb-12">

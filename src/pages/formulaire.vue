@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
     <article class="grille">
-        <h1 class="col-span-12 pb-8 lg:pb-12 font-michroma text-xl lg:text-4xl">Formulaire de contact</h1>
+        <h1 class="col-span-12 mt-8 pb-8 lg:pb-12 font-michroma text-xl lg:text-4xl">Formulaire de contact</h1>
         <section class="col-span-12 lg:col-start-2 lg:col-span-6">
             <form class="col12 lg:col6">
                 <div class="col-span-6 lg:col-span-3 mb-7">

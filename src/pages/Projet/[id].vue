@@ -20,7 +20,7 @@ useHead({
 })
 console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
 <template>
-    <div class="grille pb-6 font-michroma text-xl lg:text-4xl">
+    <div class="grille mt-8 pb-6 font-michroma text-xl lg:text-4xl">
         <h1 class="col-span-12">{{ projet.title }}</h1>
     </div>
     <ImgPb class="max-w-full"

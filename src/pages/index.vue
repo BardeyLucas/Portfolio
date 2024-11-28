@@ -12,6 +12,7 @@ import Javascript from '@/components/javascript.vue'
 import VueJS from '@/components/vueJS.vue'
 import Figma from '@/components/figma.vue'
 import Illustrator from '@/components/Illustrator.vue'
+import Plage from '@/components/Header/Plage.vue'
 const projetListe = await pb.collection('Projets').getFullList({
   sort: 'Order',
 })
@@ -19,12 +20,14 @@ const projetListe = await pb.collection('Projets').getFullList({
 // const projet = await pb.collection('')
 </script>
 <template>
-  <article class="grille">
-  <section class="col-span-12" style="height: calc(100vh - 70px);">
-    <div class="col12">
-      <h1 class="font-michroma text-4xl lg:text-6xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center">Lucas Bardey</h1>
+  <section class="col-span-12 bg-Violet" style="height: calc(100vh - 96px);">
+    <h1 class="font-michroma text-4xl lg:text-6xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center absolute mx-auto w-full">Lucas<br/>Bardey</h1>
+    <div class="flex flex-col justify-end" style="height: calc(100vh - 96px);">
+      <Plage class="w-full"/>
+      <div class="bg-Background w-full h-36"></div>
     </div>
   </section>
+  <article class="grille">
   <section class="col-span-12 pb-20">
     <h2 class="font-michroma text-xl lg:text-3xl mt-12 mb-8">Projet</h2>
     <nav>

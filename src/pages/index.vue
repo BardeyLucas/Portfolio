@@ -12,7 +12,9 @@ import Javascript from '@/components/javascript.vue'
 import VueJS from '@/components/vueJS.vue'
 import Figma from '@/components/figma.vue'
 import Illustrator from '@/components/Illustrator.vue'
-import Plage from '@/components/Header/Plage.vue'
+import Plage from '@/components/HomeIMG/Plage.vue'
+import Soleil from '@/components/HomeIMG/Soleil.vue'
+import SoleilLight from '@/components/HomeIMG/Soleil&Light.vue'
 const projetListe = await pb.collection('Projets').getFullList({
   sort: 'Order',
 })
@@ -20,11 +22,19 @@ const projetListe = await pb.collection('Projets').getFullList({
 // const projet = await pb.collection('')
 </script>
 <template>
-  <section class="col-span-12 bg-Violet" style="height: calc(100vh - 96px);">
-    <h1 class="font-michroma text-4xl lg:text-6xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center absolute mx-auto w-full">Lucas<br/>Bardey</h1>
+  <section class="col-span-12" style="height: calc(100vh - 96px);">
+    <div class="absolute z-40 w-full flex HomePage__Title">
+      <h1 class="font-michroma text-4xl lg:text-7xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center mx-auto my-auto">Lucas<br/>Bardey</h1>
+    </div>
     <div class="flex flex-col justify-end" style="height: calc(100vh - 96px);">
-      <Plage class="w-full"/>
-      <div class="bg-Background w-full h-36"></div>
+      <div class="absolute w-full h-10" style="height: 100%; background: linear-gradient(to bottom, #1c0834 30%, #3d146f 72%, #8a0c73 81%);"></div>
+      <div class="absolute w-full h-10 z-10" style="height: 100%; background: radial-gradient(100% 50% at 50% 50%, rgba(28.000000230968, 8.000000473111868, 52.000000700354576, 0.5) 65.62365889549255%, rgba(0, 0, 0, 0) 100%);"></div>
+      <div class="absolute w-full z-10 flex flex-col justify-end pb-[10vh] lg:pb-0">
+        <!-- <Soleil class="mx-auto" style="width: calc(200px + ((100% - 375px)*0.32)); margin-bottom: calc((110/1920)*100% - 1% + 10vh);"/> -->
+        <SoleilLight class="absolute" style="width: calc(286px + ((100% - 375px)*0.32)) ; left: calc(50% - calc(286px + ((100% - 375px)*0.32))/2); margin-bottom: calc(10vh + (94/1920)*100%);"/>
+      </div>
+      <Plage class="w-full z-30 -mb-[0.2px]"/>
+      <div class="bg-Background w-full h-[20vh] lg:h-[10vh] z-30"></div>
     </div>
   </section>
   <article class="grille">

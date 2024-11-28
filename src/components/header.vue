@@ -9,17 +9,22 @@ import Burger from './icons/Burger.vue';
 //   lang: false, // false pour FR, true pour EN
 // });
 const lang = ref(false)
-
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const activeMenu = ref(false)
-const isNotHomePage = computed(() => route.path != '/');
-
+const Page_actuelle = computed(() => {
+    switch (route.path) {
+        case '/':
+            return false;
+        default:
+            return true;
+    }
+});
 </script>
 
 <template>
-    <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-Background font-michroma flex text-lg lg:text-xl z-10" :class="{'! bg-gradient-to-t from-[#000000] to-Background':isNotHomePage}">
+    <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-[#1c0834] font-michroma flex text-lg lg:text-xl z-50" :class="{'!bg-gradient-to-t from-[#000000] to-Background':Page_actuelle}">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
             <RouterLink to="/">
                 <p>Acceuil</p>

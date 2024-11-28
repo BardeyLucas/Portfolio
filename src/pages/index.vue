@@ -31,10 +31,10 @@ const projetListe = await pb.collection('Projets').getFullList({
       <div class="absolute w-full h-10 z-10" style="height: 100%; background: radial-gradient(100% 50% at 50% 50%, rgba(28.000000230968, 8.000000473111868, 52.000000700354576, 0.5) 65.62365889549255%, rgba(0, 0, 0, 0) 100%);"></div>
       <div class="absolute w-full z-10 flex flex-col justify-end pb-[10vh] lg:pb-0">
         <!-- <Soleil class="mx-auto" style="width: calc(200px + ((100% - 375px)*0.32)); margin-bottom: calc((110/1920)*100% - 1% + 10vh);"/> -->
-        <SoleilLight class="absolute" style="width: calc(286px + ((100% - 375px)*0.32)) ; left: calc(50% - calc(286px + ((100% - 375px)*0.32))/2); margin-bottom: calc(10vh + (94/1920)*100%);"/>
+        <SoleilLight class="absolute" style="width: calc(286px + ((100% - 375px)*0.46)) ; left: calc(50% - calc(286px + ((100% - 375px)*0.46))/2); margin-bottom: calc(10vh + (94/1920)*100%);"/>
       </div>
       <Plage class="w-full z-30 -mb-[0.2px]"/>
-      <div class="bg-Background w-full h-[20vh] lg:h-[10vh] z-30"></div>
+      <div class="bg-Background w-full h-[20vh] lg:h-[10vh] z-30 border-8 border-Background"></div>
     </div>
   </section>
   <article class="grille">

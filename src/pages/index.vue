@@ -24,7 +24,7 @@ const projetListe = await pb.collection('Projets').getFullList({
 <template>
   <section class="col-span-12" style="height: calc(100vh - 96px);">
     <div class="absolute z-40 w-full flex HomePage__Title">
-      <h1 class="font-michroma text-4xl lg:text-7xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center mx-auto my-auto">Lucas<br/>Bardey</h1>
+      <h1 class="font-michroma text-4xl lg:text-6xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center mx-auto my-auto">Lucas<br/>Bardey</h1>
     </div>
     <div class="flex flex-col justify-end" style="height: calc(100vh - 96px);">
       <div class="absolute w-full h-10" style="height: 100%; background: linear-gradient(to bottom, #1c0834 30%, #3d146f 72%, #8a0c73 81%);"></div>

@@ -40,7 +40,7 @@ const Page_actuelle = computed(() => {
                 <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
                 <button @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
-            <nav class="flex flex-col gap-12 lg:gap-10 text-center">
+            <nav class="flex flex-col gap-12 lg:gap-10 text-center lg:text-right">
                 <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
                     <p class="text-2xl">Work</p>
                 </RouterLink>

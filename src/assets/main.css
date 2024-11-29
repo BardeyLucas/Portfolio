@@ -63,7 +63,7 @@
 
       /*Pour le titre de la page d'accueil*/
       @media screen and (min-width: 1024px) {
-      .HomePage__Title {height: calc(((100vh - 6rem) - 10vh - (110/1920*100vw))*0.5);
+      .HomePage__Title {height: calc(((100vh - 6rem) - 10vh - (110/1920*100vw))*0.45);
       }
     }
       @media screen and (max-width: 1024px) {      

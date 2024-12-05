@@ -70,4 +70,11 @@
       .HomePage__Title {height: calc(((100vh - 5rem) - 20vh - (110/1920*100vw))*0.8);
       }
     }
+
+    @media screen and (min-width: 1024px) {
+      .HomePage__Floor{height: calc(10vh + (94/1920)*100vw);}
+    }
+      @media screen and (max-width: 1024px) {      
+      .HomePage__Floor{height: calc(20vh + (94/1920)*100vw);}
+    }
 }

@@ -18,7 +18,8 @@ const projet = ref(
 useHead({
     title: () => `Projet : ${projet.value.title}`
 })
-console.log("Réponse du serveur:", projet.value.expand?.page_content);</script>
+// console.log(projet.value.expand?.page_content.Test)
+</script>
 <template>
     <div class="grille mt-8 pb-6 font-michroma text-xl lg:text-4xl">
         <h1 class="col-span-12">{{ projet.title }}</h1>

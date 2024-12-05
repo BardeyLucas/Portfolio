@@ -15,6 +15,7 @@ import Illustrator from '@/components/Illustrator.vue'
 import Plage from '@/components/HomeIMG/Plage.vue'
 import Soleil from '@/components/HomeIMG/Soleil.vue'
 import SoleilLight from '@/components/HomeIMG/Soleil&Light.vue'
+import Motif from '@/components/HomeIMG/Motif.png'
 const projetListe = await pb.collection('Projets').getFullList({
   sort: 'Order',
 })
@@ -33,6 +34,7 @@ const projetListe = await pb.collection('Projets').getFullList({
         <!-- <Soleil class="mx-auto" style="width: calc(200px + ((100% - 375px)*0.32)); margin-bottom: calc((110/1920)*100% - 1% + 10vh);"/> -->
         <SoleilLight class="absolute" style="width: calc(286px + ((100% - 375px)*0.46)) ; left: calc(50% - calc(286px + ((100% - 375px)*0.46))/2); margin-bottom: calc(10vh + (94/1920)*100%);"/>
       </div>
+      <img class="w-full absolute z-40 object-fill HomePage__Floor" src="../components/HomeIMG/Motif.png"/>
       <Plage class="w-full z-30 -mb-[0.2px]"/>
       <div class="bg-Background w-full h-[20vh] lg:h-[10vh] z-30 border-8 border-Background"></div>
     </div>

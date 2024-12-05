@@ -75,6 +75,13 @@
       .HomePage__Floor{height: calc(10vh + (94/1920)*100vw);}
     }
       @media screen and (max-width: 1024px) {      
-      .HomePage__Floor{height: calc(20vh + (94/1920)*100vw);}
+      .HomePage__Floor{height: calc(20vh + (94/1920)*100vw)}
+    }
+
+    @media screen and (min-width: 1024px) {
+      .HomePage__Palmiers{padding-bottom: calc(10vh + (94/1920)*100vw);}
+    }
+    @media screen and (max-width: 1024px) {      
+      .HomePage__Palmiers{padding-bottom: calc(20vh + (94/1920)*100vw);}
     }
 }

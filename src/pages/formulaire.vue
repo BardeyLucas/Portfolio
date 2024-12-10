@@ -1,4 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<script setup lang="ts">
+    import formulaire from '@/components/Formulaire.vue';
+</script>
 <template>
     <article class="grille">
         <h1 class="col-span-12 mt-8 pb-8 lg:pb-12 font-michroma text-xl lg:text-4xl">Formulaire de contact</h1>
@@ -39,5 +42,6 @@
             <p class="mb-1">Contact par email :</p>
             <p>&nbsp;&nbsp;&nbsp;Bardey.lucas1@gmail.com</p>
         </div>
+        <formulaire/>
     </article>
 </template>

@@ -49,7 +49,7 @@ const projetListe = await pb.collection('Projets').getFullList({
   <article class="grille">
   <section class="col-span-12 pb-20">
     <h2 class="font-michroma text-xl lg:text-3xl mt-12 mb-8">Projet</h2>
-    <nav>
+    <nav class="gap-y-12 grille w-full">
       <Card_Projet v-for="unProjet in projetListe" :key="unProjet.id" v-bind="unProjet"/>
     </nav>
   </section>

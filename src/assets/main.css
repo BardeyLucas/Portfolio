@@ -86,7 +86,7 @@
     }
 
     .CardProjet:nth-child(7n+1){
-      @apply col-start-2 lg:col-start-auto col-span-10 lg:col-span-7
+      @apply col-start-2 lg:col-start-3 col-span-10 lg:col-span-4
     }
     .CardProjet:nth-child(7n+2){
       @apply col-start-2 lg:col-start-auto col-span-10 lg:col-span-5
@@ -96,5 +96,12 @@
     }
     .CardProjet:nth-child(7n+4){
       @apply col-start-2 lg:col-start-auto col-span-10 lg:col-span-7
+    }
+
+    .Projet__RichEditor > h2{
+      @apply font-michroma text-lg lg:text-2xl mb-4
+    }
+    .Projet__RichEditor > p{
+      @apply mb-3 text-sm lg:text-base
     }
 }

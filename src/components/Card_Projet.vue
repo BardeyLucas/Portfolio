@@ -16,7 +16,7 @@ import TriangleDecoration from './HomeIMG/TriangleDecoration.vue';
             v-if="projet.miniature"
             :record="projet"
             :filename="projet.miniature"
-            class="h-[150px] w-full object-cover rounded-xl overflow-hidden block"/>
+            class="h-[150px] lg:h-[200px] w-full object-cover rounded-xl overflow-hidden block"/>
         <RouterLink
             :to="{
                 name: '/Projet/[id]',

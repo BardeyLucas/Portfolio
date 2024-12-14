@@ -10,7 +10,6 @@ import Burger from './icons/Burger.vue';
 // });
 const lang = ref(false)
 import { useRoute } from 'vue-router';
-
 const route = useRoute();
 const activeMenu = ref(false)
 const Page_actuelle = computed(() => {
@@ -24,7 +23,7 @@ const Page_actuelle = computed(() => {
 </script>
 
 <template>
-    <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-[#1c0834] font-michroma flex text-lg lg:text-xl z-50" :class="{'!bg-gradient-to-t from-[#000000] to-Background':Page_actuelle}">
+    <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-[#1c0834] font-michroma flex text-lg lg:text-xl z-50" v-scroll-lock="!activeMenu" :class="{'!bg-gradient-to-t from-[#000000] to-Background':Page_actuelle}">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
             <RouterLink to="/">
                 <p>Acceuil</p>
@@ -40,7 +39,7 @@ const Page_actuelle = computed(() => {
                 <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
                 <button @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
-            <nav class="flex flex-col gap-12 lg:gap-10 text-center lg:text-right">
+            <nav class="flex flex-col mt-20 lg:mt-0 gap-12 lg:gap-10 text-center lg:text-right">
                 <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
                     <p class="text-xl">Work</p>
                 </RouterLink>

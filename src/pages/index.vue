@@ -45,14 +45,14 @@ const projetListe = await pb.collection('Projets').getFullList({
       <div class="bg-Background w-full h-[20vh] lg:h-[10vh] z-40 border-8 border-Background"></div>
       <img class="w-full absolute z-40 object-fill HomePage__Floor" src="../components/HomeIMG/Motif.png" style="
       border-style: solid;
-      border-bottom-width: 5px;
+      border-bottom-width: 3px;
       border-image: linear-gradient(90deg, rgba(0,178,255,0.2) 0%, rgba(0,178,255,0.8) 20%, rgba(0,178,255,0.8) 80%, rgba(0,178,255,0.2) 100%) 1;"/>
     </div>
   </section>
   <article class="grille">
   <section class="col-span-12 pb-20">
     <h2 class="font-michroma text-xl lg:text-3xl mt-12 mb-8">Projet</h2>
-    <nav class="gap-y-12 grille w-full">
+    <nav class="gap-y-12 col12 w-full">
       <Card_Projet v-for="unProjet in projetListe" :key="unProjet.id" v-bind="unProjet"/>
     </nav>
   </section>

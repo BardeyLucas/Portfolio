@@ -3,24 +3,26 @@ import type { ProjetsResponse } from '@/pocketbase-types'
 import ImgPb from './ImgPb.vue'
 const projet = defineProps<ProjetsResponse<any>>()
 import { RouterLink } from 'vue-router/auto';
+import TriangleDecoration from './HomeIMG/TriangleDecoration.vue';
 </script>
 <template>
-    <div class="CardProjet rounded-3xl overflow-hidden bg-gradient-to-r from-Rose to-Orange">
-        <div class="border-4" style="border-image: linear-gradient(to right, #FF007A, #FF8D1C);">
-            <RouterLink
-                :to="{
-                    name: '/Projet/[id]',
-                    params: { id: projet.id }
-                }">
-                <div class="absolute bg-gradient-to-r from-Rose to-Orange px-3 rounded-tl-[1.25rem]">
-                    <p class="">{{ projet.titleAlt }}</p>
-                </div>
-                <ImgPb
-                    v-if="projet.miniature"
-                    :record="projet"
-                    :filename="projet.miniature"
-                    class="h-[150px] lg:h-[250px] w-full object-cover rounded-[1.25rem] overflow-hidden"/>
-            </RouterLink>
+    <!-- <div class="CardProjet rounded-3xl overflow-hidden bg-gradient-to-r from-Rose to-Orange"> -->
+    <div class="CardProjet rounded-xl font-michroma">
+        <div class="absolute bg-gradient-to-r from-Rose to-Orange px-3 rounded-tl-xl flex">
+            <p class="leading-7 w-auto">{{ projet.titleAlt }}</p>
+            <TriangleDecoration class="absolute h-[1.75rem] border-l-Orange border-l-2" style="margin-left: calc(100% - 12.3px);"/>
         </div>
+        <ImgPb
+            v-if="projet.miniature"
+            :record="projet"
+            :filename="projet.miniature"
+            class="h-[150px] w-full object-cover rounded-xl overflow-hidden block"/>
+        <RouterLink
+            :to="{
+                name: '/Projet/[id]',
+                params: { id: projet.id }
+            }" class="">
+            <button class="bg-gradient-to-r from-Rose to-Orange h-[1.8rem] px-5 rounded-lg block mx-auto mt-[-0.5rem] z-10 relative text-sm">Voir plus</button>
+        </RouterLink>
     </div>
 </template>

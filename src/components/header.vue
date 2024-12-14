@@ -36,31 +36,19 @@ const Page_actuelle = computed(() => {
             </nav>
         </nav>
         <nav class="absolute h-screen lg:-right-12 px-5 lg:pl-12 lg:pr-24 text-right hidden nav__menu w-screen lg:w-auto" :class="{'!block':activeMenu}">
-            <nav class="flex justify-between gap-5 w-auto h-40">
+            <nav class="flex justify-between gap-20 w-auto h-40">
                 <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
                 <button @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
             <nav class="flex flex-col gap-12 lg:gap-10 text-center lg:text-right">
                 <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
-                    <p class="text-2xl">Work</p>
-                </RouterLink>
-                <RouterLink to="/Projet/hzyx8uz709k7b6w" @click="activeMenu =! activeMenu">
-                    <p class="text-lg">Cardeleon</p>
-                </RouterLink>
-                <RouterLink to="/Projet/3any1equfk6yz38" @click="activeMenu =! activeMenu">
-                    <p class="text-lg">Redesign architectural</p>
-                </RouterLink>
-                <RouterLink to="/Projet/thxvj0r54z3ynoj" @click="activeMenu =! activeMenu">
-                    <p class="text-lg">Site pour un tournois Esport</p>
-                </RouterLink>
-                <RouterLink to="/Projet/6ym7rewppwl81f4" @click="activeMenu =! activeMenu">
-                    <p class="text-lg">Randoala</p>
+                    <p class="text-xl">Work</p>
                 </RouterLink>
                 <RouterLink to="/Mentions_Legales" @click="activeMenu =! activeMenu">
-                    <p class="text-2xl">A propos</p>
+                    <p class="text-xl">A propos</p>
                 </RouterLink>
                 <RouterLink to="/formulaire" @click="activeMenu =! activeMenu">
-                    <p class="text-2xl">Contact</p>
+                    <p class="text-xl">Contact</p>
                 </RouterLink>
             </nav>
         </nav>

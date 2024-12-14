@@ -8,8 +8,7 @@ export default {
        "Rose": "#ff007a",
        "Orange": "#ff8d1c",
        "Violet": "#8a0c73",
-       "Blanc": "#f9f5ff"
-      },
+       "Blanc": "#f9f5ff"      },
       "fontFamily": {
        "nunito-sans": "Nunito Sans",
        "michroma": "Michroma",

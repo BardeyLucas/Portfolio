@@ -94,28 +94,28 @@ useHead({
     <section class="grille">
       <div
         v-if="Page_actuelle == 1"
-        class="col-span-8 col-start-3 Projet__RichEditor"
+        class="col-span-12 lg:col-span-8 lg:col-start-3 Projet__RichEditor"
         v-html="sanitizeHtml(projet.expand?.Page_content[0].Content || '')"
       ></div>
-    <div class="col-span-12 col12">
-        <ImgPb class="mb-4 w-full" v-if="projet.image_content[0]" :record="projet" :filename="projet.image_content[0]" :class="{'lg:col-span-8 lg:col-start-3 w-full':Page_actuelle == 1 || Page_actuelle == 2, 'col-span-6':Page_actuelle == 0 || Page_actuelle == 3}" />
-        <ImgPb class="mb-4 w-full " v-if="projet.image_content[1] && (Page_actuelle == 0 || Page_actuelle == 1 || Page_actuelle == 3)" :record="projet" :filename="projet.image_content[1]" :class="{'col-span-6':Page_actuelle == 0 || Page_actuelle == 3, 'lg:col-span-8 lg:col-start-3':Page_actuelle==1}"/>
+    <div class="col-span-12 col12 mb-5">
+        <ImgPb class="mb-4 w-full" v-if="projet.image_content[0]" :record="projet" :filename="projet.image_content[0]" :class="{'col-span-12 lg:col-span-8 lg:col-start-3 w-full':Page_actuelle == 1 || Page_actuelle == 2, 'col-span-6':Page_actuelle == 0 || Page_actuelle == 3}" />
+        <ImgPb class="mb-4 w-full " v-if="projet.image_content[1] && (Page_actuelle == 0 || Page_actuelle == 1 || Page_actuelle == 3)" :record="projet" :filename="projet.image_content[1]" :class="{'col-span-6':Page_actuelle == 0 || Page_actuelle == 3, 'col-span-12 lg:col-span-8 lg:col-start-3':Page_actuelle==1 }"/>
       </div>
     <div
         v-if="(Page_actuelle == 0 || Page_actuelle == 2 || Page_actuelle == 3)"
-        class="col-span-12 mb-4 Projet__RichEditor" :class="{'lg:col-span-8 lg:col-start-3':Page_actuelle == 2}"
+        class="col-span-12 mb-5 Projet__RichEditor" :class="{'lg:col-span-8 lg:col-start-3':Page_actuelle == 2}"
         v-html="sanitizeHtml(projet.expand?.Page_content[0].Content || '')"
       ></div>
     <div
         v-if="Page_actuelle == 1"
-        class="col-span-8 col-start-3 Projet__RichEditor"
+        class="col-span-12 lg:col-span-8 lg:col-start-3 Projet__RichEditor"
         v-html="sanitizeHtml(projet.expand?.Page_content[1].Content || '')"
       ></div>
-    <div class="col-span-12" :class="{'col12':Page_actuelle == 1 || Page_actuelle == 0 || Page_actuelle == 3}">
+    <div class="col-span-12 mb-5" :class="{'col12':Page_actuelle == 1 || Page_actuelle == 0 || Page_actuelle == 3}">
       <ImgPb v-if="projet.image_content[2]" :record="projet" :filename="projet.image_content[2]" :class="{'col-span-6 lg:col-span-4':Page_actuelle == 0,'col-span-6 lg:col-start-3 lg:col-span-4':Page_actuelle == 1, 'lg:col-span-4':Page_actuelle == 0, 'col-start-2 col-span-10 lg:col-start-3 lg:col-span-5':Page_actuelle==3}"/>
       <ImgPb v-if="projet.image_content[3]" :record="projet" :filename="projet.image_content[3]" :class="{'col-span-6 lg:col-span-4':Page_actuelle == 1 ||Page_actuelle == 0, 'lg:col-span-4':Page_actuelle == 0, 'hidden lg:block col-span-3 h-full':Page_actuelle==3}"/>
-      <ImgPb v-if="projet.image_content[4] && Page_actuelle==3" class="col-span-12" :record="projet" :filename="projet.image_content[4]" :class="{'block lg:hidden':Page_actuelle==3}"/>
-      <div v-if="Page_actuelle == 0" :class="{'col-span-12 lg:col-span-4':Page_actuelle == 0}">
+      <ImgPb v-if="projet.image_content[4] && Page_actuelle==3" class="col-span-10 col-start-2 mt-3" :record="projet" :filename="projet.image_content[4]" :class="{'block lg:hidden':Page_actuelle==3}"/>
+      <div v-if="Page_actuelle == 0" :class="{'col-span-12 mt-3 lg:mt-0 lg:col-span-4':Page_actuelle == 0}">
         <ImgPb v-if="projet.image_content[4]" class="hidden lg:block w-full" :record="projet" :filename="projet.image_content[4]"/>
         <ImgPb v-if="projet.image_content[7]" class="block lg:hidden w-full" :record="projet" :filename="projet.image_content[7]"/>
       </div>
@@ -128,38 +128,38 @@ useHead({
       ></div>
     <div
         v-if="Page_actuelle == 1"
-        class="col-span-8 col-start-3 Projet__RichEditor"
+        class="col-span-12 lg:col-span-8 lg:col-start-3 Projet__RichEditor"
         v-html="sanitizeHtml(projet.expand?.Page_content[2].Content || '')"
       ></div>
-    <div class="col-span-12" :class="{'col12':Page_actuelle == 1}">
+    <div class="col-span-12 mb-5" :class="{'col12':Page_actuelle == 1}">
       <ImgPb v-if="projet.image_content[4] && Page_actuelle == 1" :record="projet" :filename="projet.image_content[4]" :class="{'col-span-6 lg:col-start-3 lg:col-span-4':Page_actuelle == 1}"/>
       <ImgPb v-if="projet.image_content[5] && Page_actuelle == 1" :record="projet" :filename="projet.image_content[5]" :class="{'col-span-6 lg:col-span-4':Page_actuelle == 1}"/>
     </div>
-    <div v-if="Page_actuelle == 0" class="col-span-12 col12">
-      <div class="col-start-2 col-span-10 lg:col-start-1 lg:col-span-6 flex flex-col items-center">
-        <ImgPb v-if="projet.image_content[5]" :record="projet" :filename="projet.image_content[5]"/>
+    <div v-if="Page_actuelle == 0" class="col-span-12 col12 mb-10">
+      <div class="col-start-2 col-span-10 lg:col-start-1 lg:col-span-6 flex flex-col items-center mb-8">
+        <ImgPb v-if="projet.image_content[5]" class="rounded-md lg:rounded-none" :record="projet" :filename="projet.image_content[5]"/>
         <a href="https://cardeleon.lucas-bardey.fr/">
-          <button class="bg-Violet border-Rose border font-michroma rounded-lg lg:text-lg py-1 px-5">
+          <button class="bg-Violet border-Rose border font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">
             <p>Lancer la landing page</p>
           </button>
         </a>
       </div>
       <div class="col-start-2 col-span-10 lg:col-span-6 flex flex-col items-center">
-        <ImgPb v-if="projet.image_content[6]" :record="projet" :filename="projet.image_content[6]"/>
+        <ImgPb v-if="projet.image_content[6]" class="rounded-md lg:rounded-none" :record="projet" :filename="projet.image_content[6]"/>
         <a href="https://cardeleon1.lucas-bardey.fr/">
-          <button class="bg-Violet border-Rose border font-michroma rounded-lg lg:text-lg py-1 px-5">
+          <button class="bg-Violet border-Rose border font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">
             <p>Lancer le site</p>
           </button>
         </a>
       </div>
     </div>
-    <div v-if="Page_actuelle == 1" class="col-span-12 col12">
+    <div v-if="Page_actuelle == 1" class="col-span-12 col12 mb-10">
       <div
         v-if="Page_actuelle == 1"
-        class="col-span-8 col-start-3 Projet__RichEditor"
+        class="col-span-12 lg:col-span-8 lg:col-start-3 Projet__RichEditor mb-2"
         v-html="sanitizeHtml(projet.expand?.Page_content[3].Content || '')"
       ></div>
-      <ImgPb v-if="projet.image_content[6]" class="col-span-8 col-start-3" :record="projet" :filename="projet.image_content[6]"/>
+      <ImgPb v-if="projet.image_content[6]" class="col-span-12 lg:col-span-8 lg:col-start-3" :record="projet" :filename="projet.image_content[6]"/>
     </div>
     </section>
   </article>

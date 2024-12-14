@@ -54,6 +54,7 @@ useHead({
   />
   <ImgPb
     class="max-w-full mx-auto hidden lg:block"
+    style="max-height: calc(100vh - 24rem);"
     v-if="projet.cover_desktop"
     :record="projet"
     :filename="projet.cover_desktop"
@@ -61,10 +62,10 @@ useHead({
   <article>
     <section class="grille pb-12">
       <div
-        class="col-span-12 h-36 lg:h-24 text-center flex flex-col lg:flex-row justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-12 mt-6 lg:mt-12 rounded-[50px] font-michroma text-base lg:text-xl mb-6 lg:mb-12 py-5 lg:py-0"
+        class="col-span-12 h-16 lg:h-24 text-center flex flex-row justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-5 lg:px-12 mt-6 lg:mt-12 rounded-xl lg:rounded-[50px] font-michroma text-xs lg:text-xl mb-6 lg:mb-12 py-5 lg:py-0"
       >
-        <p>Année* {{ new Date(projet.date).getFullYear() }}</p>
-        <p>Client* {{ projet.client }}</p>
+        <p><span class="font-extrabold lg:font-normal">Année :</span> {{ new Date(projet.date).getFullYear() }}</p>
+        <p><span class="font-extrabold lg:font-normal">Client :</span> {{ projet.client }}</p>
         <a :href="projet.projectLens"
           ><button><p>Tester le projet</p></button></a
         >

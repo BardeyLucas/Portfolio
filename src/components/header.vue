@@ -5,6 +5,7 @@ import { ref, reactive, computed } from 'vue';
 import { RouterLink } from 'vue-router';
 import Croix from './icons/Croix.vue';
 import Burger from './icons/Burger.vue';
+import LogoFondSombre from './icons/LogoFondSombre.vue';
 // const language = reactive({
 //   lang: false, // false pour FR, true pour EN
 // });
@@ -25,8 +26,9 @@ const Page_actuelle = computed(() => {
 <template>
     <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-[#1c0834] font-michroma flex text-lg lg:text-xl z-50" :class="{'!bg-gradient-to-t from-[#000000] to-Background':Page_actuelle}">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
-            <RouterLink to="/">
-                <p>Acceuil</p>
+            <RouterLink to="/" class="flex justify-between gap-5">
+                <LogoFondSombre class="h-10 lg:h-12 w-auto"/>
+                <p class="w-auto my-auto">Lucas Bardey</p>
             </RouterLink>
             <nav class="flex gap-5">
                 <button class="hidden lg:block"><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>

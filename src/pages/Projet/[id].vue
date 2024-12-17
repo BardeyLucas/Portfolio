@@ -67,7 +67,7 @@ useHead({
         <p><span class="font-extrabold lg:font-normal">Année :</span> {{ new Date(projet.date).getFullYear() }}</p>
         <p><span class="font-extrabold lg:font-normal">Client :</span> {{ projet.client }}</p>
         <a :href="projet.projectLens"
-          ><button><p>Tester le projet</p></button></a
+          ><button class="bg-Violet border-2 border-Background px-2 lg:px-4 py-1 lg:py-1.5 rounded-lg"><p>Tester le projet</p></button></a
         >
       </div>
       <div v-if="projet.equipe" class="col-span-12 lg:col-span-6">

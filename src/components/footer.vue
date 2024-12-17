@@ -1,5 +1,6 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
+import BackArrow from './icons/Retour-en-arriere.vue';
 </script>
 <template>
     <footer class="bg-Background border-t-Rose border-t text-Blanc">
@@ -30,6 +31,7 @@
                     <RouterLink to="/Projet/6ym7rewppwl81f4" onclick="window.scrollTo(0, 0);"><p>Randoala</p></RouterLink>
                 </nav>
             </div>
+            <BackArrow onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mt-12 col-start-11 col-span-1"/>
         </div>
         <div class="flex items-center justify-center h-12 lg:h-16 border-t-Rose border-t text-xs lg:text-lg font-michroma"><RouterLink to="/Mentions_Legales" onclick="window.scrollTo(0, 0);"><p>Mentions légales</p></RouterLink></div>
         <div class="flex items-center justify-center h-12 lg:h-16 border-t-Rose border-t text-xs lg:text-lg font-michroma text-center"><p>@ 2024 Lucas Bardey all rights reserved</p></div>

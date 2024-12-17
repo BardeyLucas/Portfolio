@@ -23,7 +23,7 @@ const Page_actuelle = computed(() => {
 </script>
 
 <template>
-    <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-[#1c0834] font-michroma flex text-lg lg:text-xl z-50" v-scroll-lock="!activeMenu" :class="{'!bg-gradient-to-t from-[#000000] to-Background':Page_actuelle}">
+    <header class="h-16 lg:h-24 lg:px-12 px-auto w-screen lg:w-full fixed text-Blanc bg-[#1c0834] font-michroma flex text-lg lg:text-xl z-50" :class="{'!bg-gradient-to-t from-[#000000] to-Background':Page_actuelle}">
         <nav class="flex justify-between items-center w-[350px] lg:w-full mx-auto lg:mx-0 h-full">
             <RouterLink to="/">
                 <p>Acceuil</p>
@@ -34,20 +34,20 @@ const Page_actuelle = computed(() => {
                 <button class="lg:hidden" @click="activeMenu =! activeMenu"><Burger/></button>
             </nav>
         </nav>
-        <nav class="absolute h-screen lg:-right-12 px-5 lg:pl-12 lg:pr-24 text-right hidden nav__menu w-screen lg:w-auto" :class="{'!block':activeMenu}">
+        <nav class="absolute h-screen lg:-right-12 px-5 lg:pl-12 lg:pr-24 text-right hidden nav__menu w-screen lg:w-auto"  v-scroll-lock="activeMenu" :class="{'!block':activeMenu}">
             <nav class="flex justify-between gap-20 w-auto h-40">
                 <button><span @click="lang = true" :class="{'!font-semibold':lang}">EN</span>/<span class="font-semibold" @click="lang = false" :class="{'!font-normal':lang}">FR</span></button>
                 <button @click="activeMenu =! activeMenu"><Croix/></button>
             </nav>
             <nav class="flex flex-col mt-20 lg:mt-0 gap-12 lg:gap-10 text-center lg:text-right">
                 <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
-                    <p class="text-xl">Work</p>
+                    <p class="text-xl" onclick="window.scrollTo(0, 0);">Work</p>
                 </RouterLink>
                 <RouterLink to="/Mentions_Legales" @click="activeMenu =! activeMenu">
-                    <p class="text-xl">A propos</p>
+                    <p class="text-xl" onclick="window.scrollTo(0, 0);">A propos</p>
                 </RouterLink>
                 <RouterLink to="/formulaire" @click="activeMenu =! activeMenu">
-                    <p class="text-xl">Contact</p>
+                    <p class="text-xl" onclick="window.scrollTo(0, 0);">Contact</p>
                 </RouterLink>
             </nav>
         </nav>

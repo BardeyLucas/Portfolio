@@ -17,3 +17,4 @@ app.use(createRouter({
 }))
 
 app.mount('#app')
+//app.use(V3ScrollLock, {});

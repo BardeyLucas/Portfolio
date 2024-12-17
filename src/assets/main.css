@@ -105,4 +105,25 @@
     .Projet__RichEditor > p{
       @apply mb-3 text-sm lg:text-base
     }
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+  /* @media screen and (min-width: 1024px) {
+    ::-webkit-scrollbar {
+        background-color: #1c0834;
+        width: 20px;
+
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    ::-webkit-scrollbar-thumb {
+        background: #0D001C;
+        border-radius: 4px;
+    }
+  } */
 }

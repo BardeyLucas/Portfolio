@@ -16,13 +16,13 @@ import TriangleDecoration from './HomeIMG/TriangleDecoration.vue';
             v-if="projet.miniature"
             :record="projet"
             :filename="projet.miniature"
-            class="h-[150px] lg:h-[200px] w-full object-cover rounded-xl overflow-hidden block"/>
+            class="h-[150px] lg:h-[250px] w-full object-cover rounded-xl overflow-hidden block"/>
         <RouterLink
             :to="{
                 name: '/Projet/[id]',
                 params: { id: projet.id }
             }" class="">
-            <button class="bg-gradient-to-r from-Rose to-Orange h-[1.8rem] px-5 rounded-lg block mx-auto mt-[-0.5rem] z-10 relative text-sm">Voir plus</button>
+            <button   class="bg-gradient-to-r from-Rose to-Orange bg-[length:200%_100%] transition-all duration-500 hover:bg-[100%_0%] h-[1.8rem] px-5 rounded-lg block mx-auto mt-[-0.5rem] z-10 relative text-sm">Voir plus</button>
         </RouterLink>
     </div>
 </template>

@@ -56,9 +56,9 @@
 
       /*Pour la nav*/
       @media screen and (min-width: 1024px) {
-      .nav__menu {margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #0D001C 0%, rgba(0,9,42,0.8) 50%, rgba(0,9,42,0) 100%);}}
+      .nav__menu {margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #0D001C 0%, rgba(13,0,28,0.8) 50%, rgba(13,0,28,0) 100%);}}
       @media screen and (max-width: 1024px) {
-      .nav__menu {margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #00092a 0%, rgba(0,9,42,0.9) 40%, rgba(0,9,42,0.8) 100%);}
+      .nav__menu {margin-right: calc((100vw - 100%)/2); background: linear-gradient(to bottom, #0D001C 0%, rgba(13,0,28,0.9) 40%, rgba(13,0,28,0.8) 100%);}
       }
 
       /*Pour le titre de la page d'accueil*/

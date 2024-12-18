@@ -67,7 +67,7 @@ useHead({
         <p><span class="font-extrabold lg:font-normal">Année :</span> {{ new Date(projet.date).getFullYear() }}</p>
         <p><span class="font-extrabold lg:font-normal">Client :</span> {{ projet.client }}</p>
         <a :href="projet.projectLens"
-          ><button class="bg-Violet hover:bg-[#9d2e89] border-2 border-Background hover:border-[#230840] transition-colors duration-100 px-2 lg:px-4 py-1 lg:py-1.5 rounded-lg"><p>Tester le projet</p></button></a
+          ><button class="bg-Violet hover:bg-[#9d2e89] active:bg-[#ad4a9b] border-2 border-Background hover:border-[#230840] transition-colors duration-100 px-2 lg:px-4 py-1 lg:py-1.5 rounded-lg"><p>Tester le projet</p></button></a
         >
       </div>
       <div v-if="projet.equipe" class="col-span-12 lg:col-span-6">
@@ -139,7 +139,7 @@ useHead({
       <div class="col-start-2 col-span-10 lg:col-start-1 lg:col-span-6 flex flex-col items-center mb-8">
         <ImgPb v-if="projet.image_content[5]" class="rounded-md lg:rounded-none" :record="projet" :filename="projet.image_content[5]"/>
         <a href="https://cardeleon.lucas-bardey.fr/">
-          <button class="bg-Violet hover:bg-[#9d2e89] transition-colors duration-100 font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">
+          <button class="bg-Violet hover:bg-[#9d2e89] active:bg-[#ad4a9b] transition-colors duration-100 font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">
             <p>Lancer la landing page</p>
           </button>
         </a>
@@ -147,7 +147,7 @@ useHead({
       <div class="col-start-2 col-span-10 lg:col-span-6 flex flex-col items-center">
         <ImgPb v-if="projet.image_content[6]" class="rounded-md lg:rounded-none" :record="projet" :filename="projet.image_content[6]"/>
         <a href="https://cardeleon1.lucas-bardey.fr/">
-          <button class="bg-Violet hover:bg-[#9d2e89] transition-colors duration-100 font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">
+          <button class="bg-Violet hover:bg-[#9d2e89] active:bg-[#ad4a9b] transition-colors duration-100 font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">
             <p>Lancer le site</p>
           </button>
         </a>

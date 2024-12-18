@@ -43,13 +43,13 @@ const Page_actuelle = computed(() => {
             </nav>
             <nav class="flex flex-col mt-20 lg:mt-0 gap-12 lg:gap-10 text-center lg:text-right">
                 <RouterLink to="/Projet" @click="activeMenu =! activeMenu">
-                    <p class="text-xl" onclick="window.scrollTo(0, 0);">Work</p>
+                    <p class="text-xl hover:opacity-70 active:opacity-50" onclick="window.scrollTo(0, 0);">Work</p>
                 </RouterLink>
                 <RouterLink to="/Mentions_Legales" @click="activeMenu =! activeMenu">
-                    <p class="text-xl" onclick="window.scrollTo(0, 0);">A propos</p>
+                    <p class="text-xl hover:opacity-70 active:opacity-50" onclick="window.scrollTo(0, 0);">A propos</p>
                 </RouterLink>
                 <RouterLink to="/formulaire" @click="activeMenu =! activeMenu">
-                    <p class="text-xl" onclick="window.scrollTo(0, 0);">Contact</p>
+                    <p class="text-xl hover:opacity-70 active:opacity-50" onclick="window.scrollTo(0, 0);">Contact</p>
                 </RouterLink>
             </nav>
         </nav>

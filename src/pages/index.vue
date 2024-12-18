@@ -26,11 +26,11 @@ const projetListe = await pb.collection('Projets').getFullList({
 // const projet = await pb.collection('')
 </script>
 <template>
-  <section class="col-span-12" style="height: calc(100vh - 96px);">
+  <section class="col-span-12">
     <div class="absolute z-40 w-full flex HomePage__Title">
       <h1 class="font-michroma text-4xl lg:text-6xl col-span-8 lg:col-span-4 col-start-3 lg:col-start-5 text-center mx-auto my-auto">Lucas<br/>Bardey</h1>
     </div>
-    <div class="flex flex-col justify-end" style="height: calc(100vh - 96px);">
+    <div class="flex flex-col justify-end HomePage__Height">
       <div class="absolute w-full h-10" style="height: 100%; background: linear-gradient(to bottom, #1c0834 30%, #3d146f 72%, #8a0c73 81%);"></div>
       <div class="absolute w-full h-10 z-10" style="height: 100%; background: radial-gradient(100% 50% at 50% 50%, rgba(28.000000230968, 8.000000473111868, 52.000000700354576, 0.5) 65.62365889549255%, rgba(0, 0, 0, 0) 100%);"></div>
       <div class="absolute w-full z-10 flex flex-col justify-end pb-[10vh] lg:pb-0">
@@ -77,29 +77,29 @@ const projetListe = await pb.collection('Projets').getFullList({
   </section>
   <section class="col-span-12 col12 pb-10 lg:pb-20">
     <h2 class="col-span-12 font-michroma text-xl lg:text-3xl mt-14 lg:mb-12">compétences</h2>
-    <div class="col-span-2 col-start-1 lg:col-start-2 h-32 flex items-center">
+    <div class="col-span-2 col-start-1 lg:col-start-2 h-32 flex text-center">
     <Html class="w-20"/>
-    <p class="hidden">HTML</p>
+    <p class="text-Background absolute -z-10">HTML</p>
     </div>
     <div class="col-span-2 col-start-4 lg:col-start-4 h-32 flex items-center">
     <Css class="w-20"/>
-    <p class="hidden">CSS</p>
+    <p class="text-Background absolute -z-10">CSS</p>
     </div>
     <div class="col-span-2 col-start-7 lg:col-start-6 h-32 flex items-center"> 
     <Javascript class="w-20"/>
-    <p class="hidden">Javascript</p>
+    <p class="text-Background absolute -z-10">Javascript</p>
     </div> 
     <div class="col-span-2 col-start-10 lg:col-start-8 h-32 flex items-center">
     <VueJS class="w-20"/>
-    <p class="hidden">VUEJS</p>
+    <p class="text-Background absolute -z-10">VUEJS</p>
     </div>
     <div class="col-span-3 col-start-4 lg:col-start-3 lg:mt-24 lg:h-32 flex items-center">
     <Figma class="w-[230px]"/>
-    <p class="hidden">Figma</p>
+    <p class="text-Background absolute -z-10">Figma</p>
     </div>
     <div class="col-span-2 col-start-8 lg:col-start-7 lg:mt-24 lg:h-32 flex items-center">
     <Illustrator class="w-20"/>
-    <p class="hidden">Illustrator</p>
+    <p class="text-Background absolute -z-10">Illustrator</p>
     </div>
   </section>
 </article>

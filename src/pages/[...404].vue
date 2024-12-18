@@ -9,7 +9,7 @@ import LogoFondSombre from '@/components/icons/LogoFondSombre.vue';
             <LogoFondSombre class="w-20 mx-auto h-auto mb-5"/>
             <h1 class="font-michroma text-2xl mb-2">Page introuvable.</h1>
             <p class="mb-5">La page que vous rechercher n'existe pas.</p>
-            <RouterLink to="/"><button class="bg-Violet px-4 py-1.5 rounded-xl"><p>Retourner à la page d'accueil</p></button></RouterLink>
+            <RouterLink to="/"><button class="bg-Violet hover:bg-[#9d2e89] transition-colors duration-100 px-4 py-1.5 rounded-xl"><p>Retourner à la page d'accueil</p></button></RouterLink>
         </div>
     </div>
 </template>

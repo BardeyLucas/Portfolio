@@ -5,7 +5,7 @@
 <template>
     <article class="grille">
         <img src="../../src/components/HomeIMG/GrilleRose.png" class="w-[50vw] hidden lg:block lg:-left-20 lg:-mt-40 lg:absolute opacity-80"/>
-        <img src="../../src/components/HomeIMG/GrilleBleu.png" class="w-[40vw] hidden lg:block lg:right-0 lg:mt-60 lg:absolute opacity-80"/>
+        <img src="../../src/components/HomeIMG/GrilleBleu.png" class="w-[40vw] hidden lg:block lg:right-0 lg:mt-60 lg:absolute opacity-50"/>
         <h1 class="relative col-span-12 mt-8 pb-8 lg:pb-12 font-michroma text-xl lg:text-4xl">Formulaire de contact</h1>
         <formulaire/>
         <div class="relative hidden lg:block col-span-3 col-start-9 bg-Violet py-10 px-5 h-fit rounded-2xl">

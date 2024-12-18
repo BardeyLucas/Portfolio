@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import type { ProjetsResponse } from '@/pocketbase-types'
 import ImgPb from './ImgPb.vue'
 const props = defineProps<ProjetsResponse<any>>()
@@ -27,4 +27,19 @@ console.log('test')
     </div>
   </div>
 </div>
-</template>
+</template> -->
+<!-- 
+<script setup lang="ts">
+import type { ProjetsResponse } from '@/pocketbase-types'
+import ImgPb from './ImgPb.vue'
+const projet = defineProps<ProjetsResponse<any>>()
+import { RouterLink } from 'vue-router/auto';
+import TriangleDecoration from './HomeIMG/TriangleDecoration.vue';
+</script>
+<template>
+  <div class="CardProjet bg-Rose w-full border-l-8 border-Violet">
+    <div class="CardCorrectif"></div>
+    <div class="CardProjetEffect h-[400px] bg-Bleu border-Violet border-8">
+    </div>
+  </div>
+</template> -->

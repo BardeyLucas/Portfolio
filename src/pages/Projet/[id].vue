@@ -44,23 +44,24 @@ useHead({
 </script>
 <template>
   <div class="grille mt-8 pb-6 font-michroma text-xl lg:text-4xl">
+    <img src="../../../src/components/HomeIMG/GrilleBleu.png" class="w-[40vw] hidden lg:block lg:right-0 lg:-mt-10 lg:absolute opacity-80"/>
     <h1 class="col-span-12">{{ projet.title }}</h1>
   </div>
   <ImgPb
-    class="max-w-full mx-auto block lg:hidden"
+    class="max-w-full mx-auto block lg:hidden relative"
     v-if="projet.cover"
     :record="projet"
     :filename="projet.cover"
   />
   <ImgPb
-    class="max-w-full mx-auto hidden lg:block"
+    class="max-w-full mx-auto hidden lg:block relative"
     style="max-height: calc(100vh - 24rem);"
     v-if="projet.cover_desktop"
     :record="projet"
     :filename="projet.cover_desktop"
   />
   <article>
-    <section class="grille pb-12">
+    <section class="grille pb-12 relative">
       <div
         class="col-span-12 h-16 lg:h-24 text-center flex flex-row justify-between items-center bg-gradient-to-t from-Violet/50 to-Violet px-5 lg:px-12 mt-6 lg:mt-12 rounded-xl lg:rounded-[50px] font-michroma text-xs lg:text-xl mb-6 lg:mb-12 py-5 lg:py-0"
       >

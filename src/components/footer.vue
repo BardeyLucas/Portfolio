@@ -24,7 +24,9 @@ import BackArrow from './icons/Retour-en-arriere.vue';
                 </nav>
             </div>
             <div class="col-span-12 lg:col-start-8 lg:col-span-2 text-center lg:text-left">
-                <RouterLink to="/Projet" onclick="window.scrollTo(0, 0);"><h3 class="mt-12 mb-6 lg:my-0 lg:h-24 font-michroma text-lg lg:text-2xl hover:opacity-70 focus:opacity-50">Projets</h3></RouterLink>
+                <RouterLink to="/Projet" class="lg:h-24 flex justify-center" onclick="window.scrollTo(0, 0);">
+                    <h3 class="mt-12 mb-6 lg:my-auto h-auto font-michroma text-lg lg:text-2xl hover:opacity-70 focus:opacity-50">Projets</h3>
+                </RouterLink>
                 <nav class="gap-y-3 flex flex-col lg:text-lg">
                     <RouterLink to="/Projet/hzyx8uz709k7b6w" onclick="window.scrollTo(0, 0);" class="hover:opacity-70 focus:opacity-50"><p>Cardeleon</p></RouterLink>
                     <RouterLink to="/Projet/3any1equfk6yz38" onclick="window.scrollTo(0, 0);" class="hover:opacity-70 focus:opacity-50"><p>Architecture</p></RouterLink>

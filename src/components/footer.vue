@@ -3,7 +3,7 @@
 import BackArrow from './icons/Retour-en-arriere.vue';
 </script>
 <template>
-    <footer class="bg-Background border-t-Rose border-t text-Blanc">
+    <footer class="bg-Background relative border-t-Rose border-t text-Blanc">
         <div class="grille pb-5">
             <div class="col-start-3 col-span-8 lg:col-start-2 lg:col-span-2 text-center lg:text-left">
                 <h3 class="flex items-center justify-center mt-12 mb-6 lg:my-0 lg:h-24 font-michroma text-lg lg:text-2xl">Contacts</h3>

@@ -51,31 +51,34 @@ const projetListe = await pb.collection('Projets').getFullList({
   </section>
   <article class="grille">
   <section class="col-span-12 pb-20">
+    <img src="../../src/components/HomeIMG/GrilleRose.png" class="w-[50vw] hidden lg:block lg:right-20 lg:mt-10 lg:absolute "/>
     <h2 class="font-michroma text-xl lg:text-3xl mt-12 mb-8">Projet</h2>
-    <nav class="gap-y-12 col12 w-full">
+    <nav class="gap-y-12 col12 w-full relative">
       <Card_Projet v-for="unProjet in projetListe" :key="unProjet.id" v-bind="unProjet"/>
     </nav>
   </section>
   <section class="col-span-12 col12 lg:pb-18">
+    <img src="../../src/components/HomeIMG/GrilleOrange.png" class="w-[45vw] hidden lg:block lg:left-10 lg:-mt-20 lg:opacity-50 lg:absolute "/>
     <h2 class="col-span-12 font-michroma text-xl lg:text-3xl mt-6 lg:mt-12 mb-6 lg:mb-12">Présentation</h2>
-    <p class="lg:text-xl col-start-2 col-span-10 lg:col-span-8 mb-5 lg:mb-10">
+    <p class="relative lg:text-xl col-start-2 col-span-10 lg:col-span-8 mb-5 lg:mb-10">
       Bonjour, je m'appelle Lucas Bardey, j’ai 20 ans et j’étudie actuellement en France en section
       Métiers du Multimédia et de l’Internet, avec une spécialisation en développement web.
     </p>
 
-    <p class="lg:text-xl col-start-2 col-span-10 lg:col-span-8 mb-5 lg:mb-10">
+    <p class="relative lg:text-xl col-start-2 col-span-10 lg:col-span-8 mb-5 lg:mb-10">
       Durant mes études, j’ai développé un large éventail de compétences, allant du développement
       web au graphisme, en passant par la communication. Cette polyvalence me permet d’aborder les
       projets sous plusieurs angles, que ce soit en conception technique ou visuelle.
     </p>
 
-    <p class="lg:text-xl col-start-2 col-span-10 lg:col-span-8">
+    <p class="relative lg:text-xl col-start-2 col-span-10 lg:col-span-8">
       Aujourd’hui, je m’épanouis dans la création de sites web. À plus long terme, mon ambition est
       de devenir diplômé en développement web et en développement de jeux vidéo, deux secteurs qui
       me passionnent et qui contribueront à bâtir mon avenir professionnel.
     </p>
   </section>
   <section class="col-span-12 col12 pb-10 lg:pb-20">
+    <img src="../../src/components/HomeIMG/GrilleBleu.png" class="w-[50vw] hidden lg:block lg:right-0 lg:-mt-60 lg:absolute "/>
     <h2 class="col-span-12 font-michroma text-xl lg:text-3xl mt-14 lg:mb-12">compétences</h2>
     <div class="col-span-2 col-start-1 lg:col-start-2 h-32 flex text-center">
     <Html class="w-20"/>

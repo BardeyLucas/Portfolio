@@ -24,6 +24,7 @@ const projetListe = await pb.collection('Projets').getFullList({
 })
 // const route = useRoute('/Projet/[id]')
 // const projet = await pb.collection('')
+// test pour suppr bug
 </script>
 <template>
   <section class="col-span-12">

@@ -37,7 +37,7 @@ import BackArrow from './icons/Retour-en-arriere.vue';
             <BackArrow onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="mt-12 col-start-11 col-span-1 hidden lg:block"/>
         </div>
         <div class="flex items-center justify-center gap-3 h-12 lg:h-16 border-t-Rose border-t text-xs lg:text-lg font-michroma">
-            <a href="/Portfolio-LucasBardey-Prototype.pdf" download class="hover:opacity-70 focus:opacity-50">Télécharger mon CV</a>
+            <a href="/CV-LucasBardey.pdf" download class="hover:opacity-70 focus:opacity-50">Télécharger mon CV</a>
             <div class="h-[2px] w-[10px] mt-1 bg-Blanc"></div>
             <RouterLink to="/Mentions_Legales" class="hover:opacity-70 focus:opacity-50" onclick="window.scrollTo(0, 0);"><p>Mentions légales</p></RouterLink>
         </div>

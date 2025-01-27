@@ -44,7 +44,7 @@ const projetListe = await pb.collection('Projets').getFullList({
       </div>
       <Plage class="w-full z-40 -mb-[0.2px]"/>
       <div class="bg-Background w-full h-[20vh] lg:h-[10vh] z-40 border-8 border-Background"></div>
-      <img class="w-full absolute z-40 object-fill HomePage__Floor" src="../components/HomeIMG/Motif.png" style="
+      <img class="w-full absolute z-40 object-fill HomePage__Floor" src="../components/HomeIMG/Motif.png" alt="route" style="
       border-style: solid;
       border-bottom-width: 3px;
       border-image: linear-gradient(90deg, rgba(0,178,255,0.2) 0%, rgba(0,178,255,0.8) 20%, rgba(0,178,255,0.8) 80%, rgba(0,178,255,0.2) 100%) 1;"/>
@@ -52,14 +52,14 @@ const projetListe = await pb.collection('Projets').getFullList({
   </section>
   <article class="grille">
   <section class="col-span-12 pb-20">
-    <img src="../components/HomeIMG/GrilleRose.png" class="w-[50vw] hidden lg:block lg:right-20 lg:mt-10 lg:absolute "/>
+    <img src="../components/HomeIMG/GrilleRose.png" alt="grille rose" class="w-[50vw] hidden lg:block lg:right-20 lg:mt-10 lg:absolute "/>
     <h2 class="font-michroma text-xl lg:text-3xl mt-12 mb-8">Projet</h2>
     <nav class="gap-y-12 col12 w-full relative">
       <Card_Projet v-for="unProjet in projetListe" :key="unProjet.id" v-bind="unProjet"/>
     </nav>
   </section>
   <section class="col-span-12 col12 lg:pb-18">
-    <img src="../components/HomeIMG/GrilleOrange.png" class="w-[45vw] hidden lg:block lg:left-10 lg:-mt-20 lg:opacity-50 lg:absolute "/>
+    <img src="../components/HomeIMG/GrilleOrange.png" alt="grille orange" class="w-[45vw] hidden lg:block lg:left-10 lg:-mt-20 lg:opacity-50 lg:absolute "/>
     <h2 class="col-span-12 font-michroma text-xl lg:text-3xl mt-6 lg:mt-12 mb-6 lg:mb-12">Présentation</h2>
     <p class="relative lg:text-xl col-start-2 col-span-10 lg:col-span-8 mb-5 lg:mb-10">
       Bonjour, je m'appelle Lucas Bardey, j’ai 20 ans et j’étudie actuellement en France en section
@@ -79,7 +79,7 @@ const projetListe = await pb.collection('Projets').getFullList({
     </p>
   </section>
   <section class="col-span-12 col12 pb-10 lg:pb-20">
-    <img src="../components/HomeIMG/GrilleBleu.png" class="w-[50vw] hidden lg:block lg:right-0 lg:-mt-60 lg:absolute "/>
+    <img src="../components/HomeIMG/GrilleBleu.png" alt="grille bleu" class="w-[50vw] hidden lg:block lg:right-0 lg:-mt-60 lg:absolute "/>
     <h2 class="col-span-12 font-michroma text-xl lg:text-3xl mt-14 lg:mb-12">compétences</h2>
     <div class="col-span-2 col-start-1 lg:col-start-2 h-32 flex text-center">
     <Html class="w-20"/>

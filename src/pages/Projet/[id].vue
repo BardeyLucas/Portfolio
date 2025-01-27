@@ -44,7 +44,7 @@ useHead({
 </script>
 <template>
   <div class="grille mt-8 pb-6 font-michroma text-xl lg:text-4xl">
-    <img src="../../../src/components/HomeIMG/GrilleBleu.png" class="w-[40vw] hidden lg:block lg:right-0 lg:-mt-10 lg:absolute opacity-80"/>
+    <img src="../../../src/components/HomeIMG/GrilleBleu.png" alt="grille bleu" class="w-[40vw] hidden lg:block lg:right-0 lg:-mt-10 lg:absolute opacity-80"/>
     <h1 class="col-span-12">{{ projet.title }}</h1>
   </div>
   <ImgPb

@@ -4,7 +4,7 @@ import { pb } from '@/backend'
 import { computed, ref } from 'vue'
 import ImgPb from '@/components/ImgPb.vue'
 import { useHead } from '@unhead/vue'
-import { useRoute, useRouter } from 'vue-router/auto'
+import { useRoute, useRouter } from 'vue-router'
 import sanitizeHtml from 'sanitize-html'
 import type { ProjetsResponse, UsersResponse, PageContentResponse } from '@/pocketbase-types'
 const route = useRoute('/Projet/[id]')

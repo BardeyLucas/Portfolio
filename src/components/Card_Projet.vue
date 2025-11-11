@@ -2,7 +2,7 @@
 import type { ProjetsResponse } from '@/pocketbase-types'
 import ImgPb from './ImgPb.vue'
 const projet = defineProps<ProjetsResponse<any>>()
-import { RouterLink } from 'vue-router/auto';
+import { RouterLink } from 'vue-router';
 import TriangleDecoration from './HomeIMG/TriangleDecoration.vue';
 </script>
 <template>

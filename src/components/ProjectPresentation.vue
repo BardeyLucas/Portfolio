@@ -1,8 +1,8 @@
 <template>
     <article :class="{'flex-row-reverse justify-between': Direction == 'reverse'}" class="col-span-12 flex  gap-x-10 bg-[#FFFFFF20] rounded-2xl px-10 py-6">
-        <section class="h-72"> 
-            <img v-if="Image == '1'" class="h-full w-full rounded-2xl" src="./ProjetImage/Image-Smash-Arena-Event.png" alt="Smash Arena Event" />  
-            <img v-if="Image == '2'" class="h-full w-full rounded-2xl" src="./ProjetImage/Image-Sainte-Suzanne.png" alt="Sainte Suzanne" />  
+        <section class="min-w-96 flex flex-col justify-center items-center"> 
+            <img v-if="Image == '1'" class="max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/Image-Smash-Arena-Event.png" alt="Smash Arena Event" />  
+            <img v-if="Image == '2'" class="max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/Image-Sainte-Suzanne.png" alt="Sainte Suzanne" />  
         </section>
         <section class="gap-y-4 flex flex-col">
             <h2 class="font-michroma text-lg lg:text-2xl">{{Title}}</h2>

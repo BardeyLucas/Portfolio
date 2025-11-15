@@ -38,10 +38,57 @@ Communication
 Autres
 - Étudier le référencement SEO et effectuer un audit technique du site de la première édition.
 "
-LinkDescription1="Site développé pour la seconde édition" LinkUrl1="https://edition2025.smash-arena-event.fr/"
-LinkDescription2="Compte Instagram de l'association" LinkUrl2="https://www.instagram.com/smash_arena_event/"
+LinkDescription1="Site développé pour la seconde édition" LinkUrl1="https://www.sainte-suzanne-doubs.fr/"
+LinkDescription2="Illustrations réaliser pour la Mairie" LinkUrl2=""
 LinkDescription3="Page Figma (maquette + affiches)" LinkUrl3="https://www.figma.com/design/rvhFI5He0NdQKkHsnZeLgu/Smash-Arena-Event---Projet-Co.---Dossier?node-id=535-2&t=49By5JGimrOpyRCj-1"/>
-            <ProjectPresentation Image="2" Title="Stage d'infographiste à la mairie de Sainte Suzanne" Description="Description du projet" Direction="reverse"/>
+            <ProjectPresentation Image="2" Title="Stage d’infographiste – Mairie de Sainte-Suzanne | 2025" Direction="reverse" Param1="Mise à jour intégrale du site" Param2="Développement" Param3="Illustrations" Param4="Création d’affiche" Param5="Photographie" Outil1="CMS : Typo 3" Outil2="Figma" Outil3="Vs Code" Outil4="Illustrator" Outil5="Photoshop" Description="Durant mon stage à la mairie de Sainte-Suzanne, j’ai eu à mener deux missions principales, accompagnées de nombreuses tâches complémentaires.
+            
+            1. Mise à jour intégrale du site de la commune
+
+            Le site actuel provient d’une refonte effectuée par Pays de Montbéliard Agglomération, dans l’objectif de moderniser les sites des communes. Cependant, celui-ci n’avait pas été entièrement finalisé et nécessitait un important travail de correction et de finition.
+
+            J’ai donc procédé, page par page, à :
+
+                - corriger les problèmes techniques et visuels,
+                - améliorer l’ergonomie et la lisibilité,
+                - ajouter des fonctionnalités manquantes,
+                - personnaliser le site selon les besoins et attentes de l’équipe municipale.
+
+            La principale difficulté résidait dans l’apprentissage en autonomie d’un CMS inconnu pour moi (Typo3), accompagné de restrictions techniques rendant certains correctifs plus complexes.
+
+            2. Réalisation d’illustrations des bâtiments phares de la ville
+
+            J’ai produit une série d’illustrations dans un style définit, cohérent et identifiable, avec des variantes jour et nuit, destinées à moderniser les visuelles de la communication municipale.
+
+            Mes principales responsabilités
+
+            Développement & mise à jour du site
+
+            - Réalisation d’un audit complet du site.
+            - Corrections et améliorations de nombreux contenus.
+            - Ajout de pages inédites.
+            - Création et intégration de composants personnalisés développés sur mesure.
+            - Ajout d’illustrations libres de droit ou de visuels photographiés par mes soins ou par l’équipe municipale.
+            - Publication régulière d’articles et d’actualités.
+            - Réorganisation de nombreux fichiers présents dans la base de données du CMS.
+
+            Graphisme
+
+            - Réalisation d’illustrations 2D de 5 bâtiments emblématiques du village, dans un style minimaliste mais très reconnaissable, avec variantes jour/nuit et travail d’ombres et lumières.
+            - Vectorisation et amélioration du logo de la ville en haute définition.
+            - Création d’icônes inédites pour le site.
+            - Conception d’une affiche promotionnelle présentant les prochains événements importants de la commune.
+
+            Autres
+
+            - Prises de vue photographiques pour alimenter le site.
+            - Porte-à-porte auprès des commerçants afin de mettre à jour et enrichir leurs pages dédiées sur le site communal.
+            "
+            LinkDescription1="Site mis à jour (version actuelle)" LinkUrl1="https://www.sainte-suzanne-doubs.fr/"
+            LinkDescription2="Illustrations réalisées pour la mairie" LinkUrl2="https://www.figma.com/design/uiNz1YQ7zoIty9AcePpXvO/Illustration-Mairie-de-Sainte-Suzanne?node-id=33-3&t=OIDmb3n4fXmd5AvA-1"
+            LinkDescription3="Refonte et vectorisation du logo" LinkUrl3="https://www.figma.com/design/Vi4yUSmPnvsQH0QMd9g5wE/Logo-de-la-ville-de-Sainte-Suzanne?node-id=0-1&t=FYdIuY9tQXty74M1-1"
+            LinkDescription4="Version du site avant mon arrivée" LinkUrl4="https://web.archive.org/web/20250330181401/https://www.sainte-suzanne-doubs.fr//"
+            />
         </section>
     </section>
 </template>

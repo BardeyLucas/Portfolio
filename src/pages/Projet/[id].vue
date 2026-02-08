@@ -137,14 +137,14 @@ useHead({
       <ImgPb v-if="projet.image_content[5] && Page_actuelle == 1" :record="projet" :filename="projet.image_content[5]" :class="{'col-span-6 lg:col-span-4':Page_actuelle == 1}"/>
     </div>
     <div v-if="Page_actuelle == 0" class="col-span-12 col12 mb-10">
-      <div class="col-start-2 col-span-10 lg:col-start-1 lg:col-span-6 flex flex-col items-center mb-8">
+      <!-- <div class="col-start-2 col-span-10 lg:col-start-1 lg:col-span-6 flex flex-col items-center mb-8">
         <ImgPb v-if="projet.image_content[5]" class="rounded-md lg:rounded-none" :record="projet" :filename="projet.image_content[5]"/>
         <a href="https://cardeleon.lucas-bardey.fr/">
           <button class="bg-Violet hover:bg-[#9d2e89] active:bg-[#ad4a9b] transition-colors duration-100 font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">
             <p>Lancer la landing page</p>
           </button>
         </a>
-      </div>
+      </div> -->
       <div class="col-start-2 col-span-10 lg:col-span-6 flex flex-col items-center">
         <ImgPb v-if="projet.image_content[6]" class="rounded-md lg:rounded-none" :record="projet" :filename="projet.image_content[6]"/>
         <a href="https://cardeleon.boreaniz.fr/">

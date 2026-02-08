@@ -11,6 +11,9 @@ import Javascript from '@/components/javascript.vue'
 import VueJS from '@/components/vueJS.vue'
 import Figma from '@/components/figma.vue'
 import Illustrator from '@/components/Illustrator.vue'
+import nuxtJs from '@/components/nuxt-js.vue'
+import sanity from '@/components/sanity.vue'
+import Unreal_Engine from '@/components/Unreal_Engine.vue'
 import Plage from '@/components/HomeIMG/Plage.vue'
 import Soleil from '@/components/HomeIMG/Soleil.vue'
 import SoleilLight from '@/components/HomeIMG/Soleil&Light.vue'
@@ -18,6 +21,8 @@ import Motif from '@/components/HomeIMG/Motif.png'
 import PalmiersGauche from '@/components/HomeIMG/Palmiers-Gauche.vue'
 import ParliersDroite from '@/components/HomeIMG/Palmiers-Droite.vue'
 import PalmiersDroite from '@/components/HomeIMG/Palmiers-Droite.vue'
+import NuxtJs from '@/components/nuxt-js.vue'
+import Sanity from '@/components/sanity.vue'
 const projetListe = await pb.collection('Projets').getFullList({
   sort: 'Order',
 })
@@ -75,29 +80,41 @@ const projetListe = await pb.collection('Projets').getFullList({
   <section class="col-span-12 col12 pb-10 lg:pb-20">
     <img src="../components/HomeIMG/GrilleBleu.png" alt="grille bleu" class="w-[50vw] hidden lg:block lg:right-0 lg:-mt-60 lg:absolute "/>
     <h2 class="col-span-12 font-michroma text-xl lg:text-3xl mt-14 lg:mb-12">Compétences</h2>
-    <div class="col-span-2 col-start-1 lg:col-start-2 h-32 flex text-center">
-    <Html class="w-20"/>
-    <p class="text-Background absolute -z-10">HTML</p>
+    <div class="col-span-2 col-start-1 lg:col-start-2 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <Html class="w-12 lg:w-20"/>
+    <p class="text-White">HTML</p>
     </div>
-    <div class="col-span-2 col-start-4 lg:col-start-4 h-32 flex items-center">
-    <Css class="w-20"/>
-    <p class="text-Background absolute -z-10">CSS</p>
+    <div class="col-span-2 col-start-4 lg:col-start-4 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <Css class="w-12 lg:w-20"/>
+    <p class="text-White">CSS</p>
     </div>
-    <div class="col-span-2 col-start-7 lg:col-start-6 h-32 flex items-center"> 
-    <Javascript class="w-20"/>
-    <p class="text-Background absolute -z-10">Javascript</p>
+    <div class="col-span-2 col-start-7 lg:col-start-6 flex flex-col justify-end items-center text-center z-10 mt-6"> 
+    <Javascript class="w-12 lg:w-20"/>
+    <p class="text-White">JavaScript</p>
     </div> 
-    <div class="col-span-2 col-start-10 lg:col-start-8 h-32 flex items-center">
-    <VueJS class="w-20"/>
-    <p class="text-Background absolute -z-10">VUEJS</p>
+    <div class="col-span-2 col-start-10 lg:col-start-8 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <VueJS class="w-12 lg:w-20"/>
+    <p class="text-White">Vue.JS</p>
     </div>
-    <div class="col-span-3 col-start-4 lg:col-start-3 lg:mt-24 lg:h-32 flex items-center">
-    <Figma class="w-[230px]"/>
-    <p class="text-Background absolute -z-10">Figma</p>
+    <div class="col-span-2 col-start-3 lg:col-start-10 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <NuxtJs class="w-12 lg:w-20"/>
+    <p class="text-White">Nuxt.js</p>
     </div>
-    <div class="col-span-2 col-start-8 lg:col-start-7 lg:mt-24 lg:h-32 flex items-center">
-    <Illustrator class="w-20"/>
-    <p class="text-Background absolute -z-10">Illustrator</p>
+    <div class="col-span-5 lg:col-span-3 col-start-6 lg:col-start-2 lg:mt-24 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <Sanity class="my-auto lg:w-[200px] xl:w-[230px]"/>
+    <p class="hidden">Sanity</p>
+    </div>
+    <div class="col-start-1 col-span-5 lg:col-span-3 lg:col-start-5 lg:mt-24 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <Figma class="my-auto lg:w-[200px] xl:w-[230px]"/>
+    <p class="hidden">Figma</p>
+    </div>
+    <div class="col-span-3 lg:col-span-2 col-start-7 lg:col-start-8 lg:mt-24 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <Unreal_Engine class="lg:w-28 xl:w-32"/>
+    <p class="hidden">Unreal engine</p>
+    </div>
+    <div class="col-span-2 col-start-11 lg:col-start-8 lg:col-start-10 lg:mt-24 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <Illustrator class="w-12 lg:w-20"/>
+    <p class="text-White">Illustrator</p>
     </div>
   </section>
 </article>

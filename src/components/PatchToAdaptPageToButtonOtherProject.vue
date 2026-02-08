@@ -1,0 +1,18 @@
+<script setup lang="ts">
+    import { useRoute } from 'vue-router';
+    import { computed } from 'vue';
+    const route = useRoute();
+    const Page_actuelle = computed(() => {
+        switch (route.path) {
+            case '/Projet/AutresProjets':
+                return false;
+            default:
+                return true;
+        }
+    });
+</script>
+<template>
+    <div class="opacity-0 text-Blanc bg-[#1c0834] border-2 border-Bleu w-screen bottom-0 lg:text-2xl px-6 py-4 opacity-90 font-semibold" :class="{'!hidden':!Page_actuelle}">
+        <p>Les projets les plus récents ne disposent pas encore de pages dédiées au sein du portfolio et seront ajoutés ultérieurement. Les projets et travaux récents sont donc répertoriés [ici]</p>
+    </div>
+</template>

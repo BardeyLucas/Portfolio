@@ -145,7 +145,7 @@ useHead({
           </button>
         </a>
       </div> -->
-      <div class="col-start-2 col-span-10 lg:col-span-6 flex flex-col items-center">
+      <div class="col-start-2 col-span-10 lg:col-start-4 lg:col-span-6 flex flex-col items-center">
         <ImgPb v-if="projet.image_content[6]" class="rounded-md lg:rounded-none" :record="projet" :filename="projet.image_content[6]"/>
         <a href="https://cardeleon.boreaniz.fr/">
           <button class="bg-Violet hover:bg-[#9d2e89] active:bg-[#ad4a9b] transition-colors duration-100 font-michroma rounded-lg lg:text-lg py-1 px-5 mt-3">

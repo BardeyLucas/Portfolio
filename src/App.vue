@@ -4,6 +4,7 @@ import LoginOut from './components/LoginOut.vue';
 import Header from './components/header.vue';
 import Footer from './components/footer.vue';
 import ButtonOtherProject from './components/ButtonOtherProject.vue';
+import PatchToAdaptPageToButtonOtherProject from './components/PatchToAdaptPageToButtonOtherProject.vue';
 </script>
 
 <template>
@@ -19,4 +20,5 @@ import ButtonOtherProject from './components/ButtonOtherProject.vue';
     </main>
   </div>
   <Footer/>
+  <PatchToAdaptPageToButtonOtherProject/>
 </template>

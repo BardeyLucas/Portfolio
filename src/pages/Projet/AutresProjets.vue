@@ -40,7 +40,7 @@ Communication
 Autres
 - Étude du référencement SEO et réalisation d’un audit technique du site de la première édition.
 "
-LinkDescription1="Site développé pour la seconde édition (Momentanément indisponible)" LinkUrl1="https://edition2025.smash-arena-event.fr/"
+LinkDescription1="Site développé pour la seconde édition (Momentanément indisponible, le site sera de nouveau accessible mardi)" LinkUrl1="https://edition2025.smash-arena-event.fr/"
 LinkDescription3="Page Figma (maquettes et affiches)" LinkUrl3="https://www.figma.com/design/rvhFI5He0NdQKkHsnZeLgu/Smash-Arena-Event---Projet-Co.---Dossier?node-id=244-37&p=f&t=Jm0PhueMVM6a6JPV-0"/>
             <ProjectPresentation Image="2" Title="Stage d’infographiste – Mairie de Sainte-Suzanne | 2025" Direction="reverse" Param1="Mise à jour intégrale du site" Param2="Développement" Param3="Illustrations" Param4="Création d’affiches" Param5="Photographie" Outil1="CMS : TYPO3" Outil2="Figma" Outil3="Vs Code" Outil4="Illustrator" Outil5="Photoshop" Description="
             Durant mon stage à la mairie de Sainte-Suzanne, j’ai mené deux missions principales, accompagnées de nombreuses tâches complémentaires.            

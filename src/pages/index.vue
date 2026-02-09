@@ -112,7 +112,7 @@ const projetListe = await pb.collection('Projets').getFullList({
     <Unreal_Engine class="lg:w-28 xl:w-32"/>
     <p class="hidden">Unreal engine</p>
     </div>
-    <div class="col-span-2 col-start-11 lg:col-start-8 lg:col-start-10 lg:mt-24 flex flex-col justify-end items-center text-center z-10 mt-6">
+    <div class="col-span-2 col-start-11 lg:col-start-10 lg:col-start-10 lg:mt-24 flex flex-col justify-end items-center text-center z-10 mt-6">
     <Illustrator class="w-12 lg:w-20"/>
     <p class="text-White">Illustrator</p>
     </div>

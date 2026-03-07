@@ -1,10 +1,12 @@
 <template>
     <article class="col-span-12 flex flex-col lg:flex-row  gap-y-5 lg:gap-y-0 lg:gap-x-10 bg-[#FFFFFF20] rounded-2xl px-5 lg:px-10 py-6 !min-width-1" :class="{'lg:flex-row-reverse': Direction == 'reverse'}">
         <section class="lg:min-w-96 lg:max-w-[20vw] h-fit flex flex-col justify-center items-center"> 
-            <img v-if="Image == '1'" class="lg:hidden max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/Image-Smash-Arena-Event.png" alt="Smash Arena Event" />  
-            <img v-if="Image == '1'" class="hidden lg:block max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/BanderollSmashArenaEvent.png" alt="Smash Arena Event" />  
-            <img v-if="Image == '2'" class="lg:hidden max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/Image-Sainte-Suzanne.png" alt="Sainte Suzanne" />  
-            <img v-if="Image == '2'" class="hidden lg:block max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/BanderollSainte-Suzanne.png" alt="Sainte Suzanne" />
+            <img v-if="Image == '1'" class="lg:hidden max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/KinadoGameVisuelMobile.png" alt="Kinado Island" />  
+            <img v-if="Image == '1'" class="hidden lg:block max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/KinadoGameVisuelDesktop.png" alt="Kinado Island" />  
+            <img v-if="Image == '2'" class="lg:hidden max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/Image-Smash-Arena-Event.png" alt="Smash Arena Event" />  
+            <img v-if="Image == '2'" class="hidden lg:block max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/BanderollSmashArenaEvent.png" alt="Smash Arena Event" />  
+            <img v-if="Image == '3'" class="lg:hidden max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/Image-Sainte-Suzanne.png" alt="Sainte Suzanne" />  
+            <img v-if="Image == '3'" class="hidden lg:block max-h-full h-auto w-full rounded-2xl" src="./ProjetImage/BanderollSainte-Suzanne.png" alt="Sainte Suzanne" />
         </section>
         <section class="gap-y-4 flex flex-col">
             <h2 class="font-michroma text-lg lg:text-2xl">{{Title}}</h2>

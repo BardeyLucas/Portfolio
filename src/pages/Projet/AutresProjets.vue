@@ -7,7 +7,31 @@ import ProjectPresentation from '@/components/ProjectPresentation.vue';
     <section class="grille">
         <h1 class="col-span-12 mt-8 pb-8 font-michroma text-xl lg:text-4xl">Les projets les plus récents</h1>
         <section class="col-span-12 flex flex-col gap-y-12 mb-20">
-            <ProjectPresentation Image="1" Title="SMASH ARENA EVENT 2ᵉ édition | 2025" Direction="" Param1="Tournoi Esport" Param2="Projet collectif" Param3="Organisation événementielle" Param4="Développement d'un site promotionnel" Param5="Communication" Outil1="Figma" Outil2="VS Code" Outil3="Suite Google" Outil4="Trello" Outil5="" Description="
+            <ProjectPresentation Image="1" Title="Kinado Island | 2026" Direction="" Param1="Jeu vidéo" Param2="Unreal Engine" Param3="Blueprint" Param4="Platformer" Param5="Collectathon" Outil1="Unreal Engine" Outil2="Blender" Outil3="Mixamo" Outil4="Figma" Outil5="" Description="
+            « Toutes mes salutations !
+            C’est le Général Parrot à l’appareil ! »
+
+            « Aujourd’hui, j’ai un jeu à vous présenter :
+            le platformer collectathon Kinado Island. »
+
+            « Une première version alpha est disponible ci-dessous.
+            Le développement reprendra bientôt. »
+
+            Dans Kinado Island, le joueur accompagne Kinado à travers l’île de ses ancêtres afin d’en percer les mystères.
+
+            Après l’apparition soudaine d’une étrange porte au centre de l’île, autrefois paisible, Kinado part en quête de réponses. Pour progresser, il devra récupérer des clés (des noisettes) dispersées dans l’environnement et affronter les dangers apparus durant la nuit.
+
+            Au cours de son exploration, le joueur découvrira des secrets, traversera des ruines et débloquera de nouvelles capacités permettant d’explorer l’île plus profondément.
+
+            Ce jeu est un projet étudiant réalisé en solo. Le développement est actuellement en pause et reprendra en mai, avec des mises à jour régulières du projet.
+
+            Les actualités du projet seront disponible sur :
+            Instagram - denkikned
+            "
+            LinkDescription1="Liens vers le build de mon projet" LinkUrl1="https://drive.google.com/drive/u/0/folders/1OlsiUKh85FQmQZtlPIwn2VOEPX-h_kZL"
+            LinkDescription2="Liens vers mon instagram" LinkUrl2="https://www.instagram.com/denkikned/"
+            />
+            <ProjectPresentation Image="2" Title="SMASH ARENA EVENT 2ᵉ édition | 2025" Direction="" Param1="Tournoi Esport" Param2="Projet collectif" Param3="Organisation événementielle" Param4="Développement d'un site promotionnel" Param5="Communication" Outil1="Figma" Outil2="VS Code" Outil3="Suite Google" Outil4="Trello" Outil5="" Description="
 Smash Arena Event est un événement e-sport annuel organisé par des étudiants et pour des étudiants.
 Il est centré sur un tournoi de Super Smash Bros Ultimate et propose également un espace détente, permettant au public, aux joueurs et aux bénévoles de profiter de jeux multijoueurs tels que Mario Kart ou Splatoon.
 
@@ -43,8 +67,8 @@ Autres
 LinkDescription1="Site développé pour la seconde édition (Archive)" LinkUrl1="http://archive-smash-arena-event-2025.lucas-bardey.fr/"
 LinkDescription2="Compte instagram de l'événement" LinkUrl2="https://www.instagram.com/smash_arena_event/"
 LinkDescription3="Page Figma (maquettes et affiches)" LinkUrl3="https://www.figma.com/design/rvhFI5He0NdQKkHsnZeLgu/Smash-Arena-Event---Projet-Co.---Dossier?node-id=244-37&p=f&t=Jm0PhueMVM6a6JPV-0"/>
-            <ProjectPresentation Image="2" Title="Stage d’infographiste – Mairie de Sainte-Suzanne | 2025" Direction="reverse" Param1="Mise à jour intégrale du site" Param2="Développement" Param3="Illustrations" Param4="Création d’affiches" Param5="Photographie" Outil1="CMS : TYPO3" Outil2="Figma" Outil3="Vs Code" Outil4="Illustrator" Outil5="Photoshop" Description="
-            Durant mon stage à la mairie de Sainte-Suzanne, j’ai mené deux missions principales, accompagnées de nombreuses tâches complémentaires.            
+<ProjectPresentation Image="3" Title="Stage d’infographiste – Mairie de Sainte-Suzanne | 2025" Direction="reverse" Param1="Mise à jour intégrale du site" Param2="Développement" Param3="Illustrations" Param4="Création d’affiches" Param5="Photographie" Outil1="CMS : TYPO3" Outil2="Figma" Outil3="Vs Code" Outil4="Illustrator" Outil5="Photoshop" Description="
+Durant mon stage à la mairie de Sainte-Suzanne, j’ai mené deux missions principales, accompagnées de nombreuses tâches complémentaires.            
 
             1. Mise à jour intégrale du site de la commune
 
